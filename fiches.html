@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fiches Vigie</title>
+<meta name="description" content="Onze fiches pour l'UE2 Observation de la santé (M2 PPASP, EHESP) : sources de données, épidémiologie, analyse quantitative, tests et lecture critique d'article.">
+<meta property="og:title" content="Fiches Vigie">
+<meta property="og:description" content="Onze fiches pour l'UE2 Observation de la santé (M2 PPASP, EHESP) : sources de données, épidémiologie, analyse quantitative, tests et lecture critique d'article.">
+<meta name="theme-color" content="#2B5FA8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='8.5' fill='none' stroke='%232B5FA8' stroke-width='3'/%3E%3Cpath d='M20.5 20.5l6 6' stroke='%232B5FA8' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
+<style>
+:root{
+  --bg:#F4F7F5;--surface:#FFFFFF;--surface-2:#EDF2EF;--ink:#14231C;--muted:#5B6B63;--line:#D9E2DD;
+  --brand:#2B5FA8;--brand-ink:#173A6B;--brand-soft:#DDE8F7;
+  --gold:#C98A1A;--gold-soft:#FBF1DC;--rose:#B8513A;--rose-soft:#F9E6E1;
+  --u1:#2B5FA8;--u2:#2B5FA8;--u3:#B8513A;--u4:#6E48A6;--u5:#B77A14;--u6:#2F7386;--u7:#4E7A2B;--u8:#A23B72;--u9:#8C5A2B;--u10:#3F51B5;--u11:#C2410C;--u12:#9D2B2B;--u13:#0E7490;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Nunito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1512;--surface:#171F1B;--surface-2:#1F2925;--ink:#EEF3F0;--muted:#A3B3AA;--line:#2B3731;
+    --brand:#7FAAE8;--brand-ink:#C9DBF6;--brand-soft:#17263B;
+    --gold:#E7B44A;--gold-soft:#3A2E13;--rose:#E8836C;--rose-soft:#3F211B;
+    --u1:#3FA57E;--u2:#6C9BE0;--u3:#E08468;--u4:#A98BD8;--u5:#E0A83A;--u6:#5FAEC4;--u7:#8DBA5A;--u8:#D77BA8;--u9:#C99462;--u10:#8C9BE8;--u11:#F08A4B;--u12:#E07A7A;--u13:#4FB8D4;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1512;--surface:#171F1B;--surface-2:#1F2925;--ink:#EEF3F0;--muted:#A3B3AA;--line:#2B3731;
+  --brand:#7FAAE8;--brand-ink:#C9DBF6;--brand-soft:#17263B;
+  --gold:#E7B44A;--gold-soft:#3A2E13;--rose:#E8836C;--rose-soft:#3F211B;
+  --u1:#3FA57E;--u2:#6C9BE0;--u3:#E08468;--u4:#A98BD8;--u5:#E0A83A;--u6:#5FAEC4;--u7:#8DBA5A;--u8:#D77BA8;--u9:#C99462;--u10:#8C9BE8;--u11:#F08A4B;--u12:#E07A7A;--u13:#4FB8D4;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration-thickness:1px;text-underline-offset:3px}
+h1,h2,h3,h4{font-family:var(--sans);line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin:.25em 0}
+li::marker{color:var(--m,var(--brand))}
+strong{font-weight:700}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:820px;margin:0 auto;padding:10px 16px 0;display:flex;flex-direction:column;gap:8px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand .name{font-family:var(--sans);font-weight:900;font-size:20px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.brand .name svg{width:26px;height:26px}
+.brand .app{font-family:var(--sans);font-weight:800;font-size:13px;background:var(--brand);color:#fff;padding:7px 12px;border-radius:999px;text-decoration:none;white-space:nowrap;box-shadow:0 3px 0 var(--brand-ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:10px;margin:0 -16px;padding-left:16px;padding-right:16px}
+.chips::-webkit-scrollbar{display:none}
+.chip{font-family:var(--sans);font-weight:800;font-size:12.5px;white-space:nowrap;padding:6px 11px;border-radius:999px;border:1.5px solid var(--line);color:var(--muted);text-decoration:none;background:var(--surface);flex:none}
+.chip[data-m]{border-color:color-mix(in srgb,var(--m) 45%,transparent)}
+.chip.active{background:var(--m,var(--brand));color:#fff;border-color:var(--m,var(--brand))}
+main{max-width:820px;margin:0 auto;padding:20px 16px 80px}
+.intro{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 20px;margin-bottom:26px}
+.intro h1{font-size:30px;font-weight:900;letter-spacing:-.02em;margin-bottom:6px}
+.intro .sub{color:var(--muted);font-size:16px}
+.intro .meta{font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:12px;display:flex;flex-wrap:wrap;gap:6px 14px}
+.toc{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:16px}
+.toc a{display:flex;gap:10px;align-items:flex-start;text-decoration:none;color:var(--ink);background:var(--surface-2);border-radius:12px;padding:10px 12px;font-family:var(--sans);font-size:14px;font-weight:700;line-height:1.3;border-left:4px solid var(--m)}
+.toc a small{display:block;font-weight:600;color:var(--muted);font-size:12px;margin-top:2px}
+.toc .n{font-weight:900;color:var(--m);font-size:16px;min-width:18px}
+.fiche{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:0 0 8px;margin-bottom:28px;overflow:hidden;scroll-margin-top:118px}
+.fiche > header{padding:22px 20px 16px;border-top:6px solid var(--m);background:linear-gradient(180deg,color-mix(in srgb,var(--m) 10%,var(--surface)),var(--surface))}
+.eyebrow{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--m)}
+.fiche h1{font-size:26px;font-weight:900;letter-spacing:-.02em;margin:4px 0 6px}
+.fiche .who{font-family:var(--sans);font-size:14px;color:var(--muted);font-weight:600}
+.fiche .body{padding:8px 20px 12px}
+.fiche h2{font-size:19px;font-weight:900;margin:26px 0 10px;padding-top:14px;border-top:1px solid var(--line);color:var(--ink)}
+.fiche h2 .k{color:var(--m);margin-right:6px}
+.fiche h3{font-size:16px;font-weight:800;margin:16px 0 6px;color:var(--ink)}
+.essentiel{background:color-mix(in srgb,var(--m) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--m) 30%,transparent);border-radius:14px;padding:14px 16px 6px;margin:10px 0 6px}
+.essentiel .t{font-family:var(--sans);font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--m);margin-bottom:6px}
+.essentiel ol{padding-left:1.2em}
+.essentiel li{margin:.35em 0}
+.def{border-left:4px solid var(--m);background:var(--surface-2);padding:10px 14px;border-radius:0 12px 12px 0;margin:10px 0 14px;font-size:16px}
+.def .l{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--m);display:block;margin-bottom:2px}
+.def cite{display:block;font-style:normal;font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:4px}
+.piege{background:var(--rose-soft);border-radius:12px;padding:10px 14px;margin:10px 0 14px;font-size:15.5px}
+.piege .l{font-family:var(--sans);font-weight:900;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--rose);display:block;margin-bottom:2px}
+.astuce{background:var(--gold-soft);border-radius:12px;padding:10px 14px;margin:10px 0 14px;font-size:15.5px}
+.astuce .l{font-family:var(--sans);font-weight:900;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:2px}
+.tw{overflow-x:auto;margin:8px 0 16px;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px;font-family:var(--sans)}
+th,td{padding:9px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:color-mix(in srgb,var(--m) 10%,var(--surface));font-weight:800;font-size:13px;letter-spacing:.02em}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin:8px 0 14px}
+.card{background:var(--surface-2);border-radius:12px;padding:12px 14px;font-size:15px}
+.card .t{font-family:var(--sans);font-weight:900;font-size:13px;color:var(--m);margin-bottom:4px}
+.card ul{margin:0;padding-left:1.1em;font-size:14.5px}
+.scale{display:flex;flex-direction:column;gap:4px;margin:8px 0 14px;font-family:var(--sans);font-size:14px}
+.scale div{padding:7px 12px;border-radius:8px;background:color-mix(in srgb,var(--m) calc(var(--i)*11%),var(--surface-2));font-weight:700}
+.refs{font-family:var(--sans);font-size:13.5px;color:var(--muted);line-height:1.5}
+.refs li{margin:.3em 0}
+details{border:1px solid var(--line);border-radius:12px;padding:0 14px;margin:8px 0}
+details summary{cursor:pointer;font-family:var(--sans);font-weight:800;padding:11px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+details summary::after{content:"+";font-size:20px;color:var(--m);font-weight:600}
+details[open] summary::after{content:"–"}
+details .in{padding:0 0 12px;font-size:15.5px;border-top:1px dashed var(--line);padding-top:10px}
+.q{font-weight:700}
+.tag{display:inline-block;font-family:var(--sans);font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted);margin-left:6px;vertical-align:middle}
+.hc{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:6px;background:var(--gold-soft);color:var(--gold);margin:0 2px;vertical-align:middle;white-space:nowrap}
+.chrono{list-style:none;padding:0;margin:8px 0 14px;border-left:3px solid var(--line);margin-left:52px}
+.chrono li{position:relative;padding:4px 0 10px 18px;font-size:15.5px}
+.chrono li::before{content:attr(data-y);position:absolute;left:-64px;top:4px;width:46px;text-align:right;font-family:var(--sans);font-weight:900;font-size:13px;color:var(--brand)}
+.chrono li::after{content:"";position:absolute;left:-7px;top:11px;width:9px;height:9px;border-radius:50%;background:var(--brand);border:2px solid var(--surface)}
+.lex dt{font-family:var(--sans);font-weight:900;margin-top:10px}
+.lex dd{margin:2px 0 0;font-size:15.5px}
+.foot{font-family:var(--sans);font-size:13px;color:var(--muted);text-align:center;padding:10px 0 0}
+.up{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;background:var(--brand);color:#fff;border:0;font-size:20px;box-shadow:0 4px 0 var(--brand-ink);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s}
+.up.show{opacity:1;pointer-events:auto}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (max-width:480px){body{font-size:16px}.fiche h1{font-size:23px}.intro h1{font-size:26px}}
+@media print{
+  .top,.up{display:none}
+  body{background:#fff;color:#000;font-size:11.5pt}
+  .fiche{break-inside:avoid-page;border:0;box-shadow:none;page-break-after:always}
+  details{border:0;padding:0}details summary::after{display:none}details .in{display:block}
+  .tw{overflow:visible}table{min-width:0}
+}
+</style>
+
+<div class="top"><div class="top-in">
+  <div class="brand">
+    <div class="name"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8.5" fill="none" stroke="var(--brand)" stroke-width="3"/><path d="M20.5 20.5l6 6" stroke="var(--brand)" stroke-width="3.4" stroke-linecap="round"/><path d="M10 15.5l2.5-3 2.5 2.5 3-4" fill="none" stroke="var(--brand)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Fiches Vigie</div>
+    <a class="app" href="./">Ouvrir l'appli ↗</a>
+  </div>
+  <nav class="chips" id="chips">
+    <a class="chip" href="#lca" data-m style="--m:var(--u11)">★ Évaluation LCA</a>
+    <a class="chip" href="#f1" data-m style="--m:var(--u1)">1 · Observer</a>
+    <a class="chip" href="#f2" data-m style="--m:var(--u2)">2 · Sources</a>
+    <a class="chip" href="#f3" data-m style="--m:var(--u3)">3 · Observatoires</a>
+    <a class="chip" href="#f4" data-m style="--m:var(--u4)">4 · Indicateurs</a>
+    <a class="chip" href="#f5" data-m style="--m:var(--u5)">5 · Études</a>
+    <a class="chip" href="#f6" data-m style="--m:var(--u6)">6 · RR et OR</a>
+    <a class="chip" href="#f7" data-m style="--m:var(--u7)">7 · Biais</a>
+    <a class="chip" href="#f8" data-m style="--m:var(--u8)">8 · Décrire</a>
+    <a class="chip" href="#f9" data-m style="--m:var(--u9)">9 · Tests</a>
+    <a class="chip" href="#f10" data-m style="--m:var(--u10)">10 · Exercices</a>
+    <a class="chip" href="#f11" data-m style="--m:var(--u11)">11 · Article écrans</a>
+    <a class="chip" href="#formulaire">Formulaire</a>
+    <a class="chip" href="#lex">Lexique</a>
+  </nav>
+</div></div>
+
+<main>
+<section class="intro">
+  <div class="eyebrow" style="--m:var(--brand);color:var(--brand)">Master 2 PPASP 2026-2027 · EHESP · département METIS</div>
+  <h1>UE2 — Observation de la santé : analyse et aide à la décision</h1>
+  <p class="sub">Onze fiches construites à partir des sept documents de Mélanie Bertin : introduction de l'UE, « Observer et recueillir des données de santé », fondamentaux de l'épidémiologie, fondamentaux de l'analyse quantitative, exercices d'analyse quantitative, questions de lecture critique d'article et leur corrigé.</p>
+  <p class="sub">Tout vient de ces documents. Les rares précisions extérieures portent la marque <span class="hc">ajout</span> : utiles pour comprendre, à n'utiliser que si le cours les a vues.</p>
+  <div class="meta"><span>Évaluation : travail de groupe 70 % (policy brief 60 %, poster 40 %) · lecture d'un document en épidémiologie et indicateurs quantitatifs 30 %</span><span>LCA + questions évaluées : vendredi 2 octobre, 14 h - 15 h (remise du policy brief et des posters à 12 h 30, présentation des posters de 15 h 15 à 17 h)</span><span>Mise à jour : 30 septembre 2026</span></div>
+  <div class="toc">
+    <a href="#lca" style="--m:var(--u11)"><span class="n">★</span><span>Réussir la lecture critique de vendredi<small>Méthode, pièges, phrases types</small></span></a>
+    <a href="#f1" style="--m:var(--u1)"><span class="n">1</span><span>Observer, analyser, aider à la décision<small>Introduction de l'UE</small></span></a>
+    <a href="#f2" style="--m:var(--u2)"><span class="n">2</span><span>Les sources des données de santé<small>SNDS, CépiDc, registres, études, surveillance</small></span></a>
+    <a href="#f3" style="--m:var(--u3)"><span class="n">3</span><span>Où trouver les données<small>Observatoires sanitaires, offre de soins, social, environnement</small></span></a>
+    <a href="#f4" style="--m:var(--u4)"><span class="n">4</span><span>Épidémiologie et indicateurs<small>Prévalence, incidence, mortalité, létalité</small></span></a>
+    <a href="#f5" style="--m:var(--u5)"><span class="n">5</span><span>Les types d'études<small>Cohorte, cas-témoins, transversale, écologique</small></span></a>
+    <a href="#f6" style="--m:var(--u6)"><span class="n">6</span><span>Mesures d'association<small>RR, OR, IC, fractions attribuables</small></span></a>
+    <a href="#f7" style="--m:var(--u7)"><span class="n">7</span><span>Biais et causalité<small>Sélection, information, confusion, Bradford Hill</small></span></a>
+    <a href="#f8" style="--m:var(--u8)"><span class="n">8</span><span>Décrire des données<small>Variables, position, dispersion, graphiques</small></span></a>
+    <a href="#f9" style="--m:var(--u9)"><span class="n">9</span><span>Les tests statistiques<small>H0, α, p, Chi2, Student</small></span></a>
+    <a href="#f10" style="--m:var(--u10)"><span class="n">10</span><span>Exercices corrigés<small>Accès aux soins, Baromètre santé 2021, Chi2</small></span></a>
+    <a href="#f11" style="--m:var(--u11)"><span class="n">11</span><span>L'article écrans et langage<small>Corrigé des 15 questions</small></span></a>
+  </div>
+</section>
+
+<!-- ============ LCA ============ -->
+<article class="fiche" id="lca" style="--m:var(--u11)">
+<header>
+  <div class="eyebrow">À lire en premier · évaluation du vendredi 2 octobre</div>
+  <h1>Réussir la lecture critique d'article</h1>
+  <div class="who">Objectifs annoncés : reconnaître les types d'études, les mesures d'association et leur interprétation, les biais et les limites</div>
+</header>
+<div class="body">
+<div class="essentiel"><div class="t">Les 6 réflexes</div><ol>
+<li><strong>Nommer le design</strong> et dire sur quoi les sujets ont été sélectionnés (exposition, maladie, rien, groupes).</li>
+<li><strong>Justifier le design</strong> : maladie rare ou délai long → cas-témoins ; exposition rare ou plusieurs maladies → cohorte.</li>
+<li><strong>Lire chaque OR avec son IC</strong> : l'IC contient 1 → non significatif. Toujours comparer OR brut et OR ajusté.</li>
+<li><strong>Formuler juste</strong> : en cas-témoins on parle d'<em>odds</em> (de cote), jamais de « risque ».</li>
+<li><strong>Chercher les trois biais</strong> : sélection (qui est dans l'étude ?), information (comment a-t-on mesuré ?), confusion (a-t-on ajusté ?).</li>
+<li><strong>Conclure prudemment</strong> : une association, pas une preuve de causalité (temporalité, causalité inverse, Bradford Hill).</li>
+</ol></div>
+<h2><span class="k">1.</span>La grille en sept temps</h2>
+<div class="tw"><table>
+<tr><th>Temps</th><th>Ce qu'on cherche</th><th>Question type</th></tr>
+<tr><td>Introduction</td><td>Contexte, problème, hypothèse, connaissances antérieures et leurs limites, objectif</td><td>« Avez-vous les éléments pour comprendre le contexte ? »</td></tr>
+<tr><td>Design</td><td>Type d'étude et justification</td><td>« Pourquoi un cas-témoins plutôt qu'une cohorte ? »</td></tr>
+<tr><td>Population</td><td>Critères d'inclusion et d'exclusion, définition des cas et des témoins</td><td>« Que pensez-vous des critères ? »</td></tr>
+<tr><td>Mesures</td><td>Outil de mesure de l'exposition, paramètres, facteurs de confusion recueillis</td><td>« Comment est mesurée l'exposition ? »</td></tr>
+<tr><td>Description</td><td>Tableau 1 : moyenne ± écart-type pour les quantitatives, n (%) pour les qualitatives ; tests de comparaison</td><td>« Pourquoi moyenne ± écart-type pour l'âge ? »</td></tr>
+<tr><td>Résultats</td><td>OR bruts et ajustés, IC 95 %, modèle final</td><td>« Interprétez le tableau 2 »</td></tr>
+<tr><td>Limites et conclusion</td><td>Biais cités et non cités ; association ou causalité ; interprétation dans le résumé</td><td>« En voyez-vous d'autres ? »</td></tr>
+</table></div>
+<h2><span class="k">2.</span>Phrases prêtes à l'emploi</h2>
+<ul>
+<li><strong>OR significatif</strong> : « Après ajustement sur X, Y et Z, les odds de présenter [la maladie] sont 3,4 fois plus élevées chez les enfants exposés que chez les non-exposés (ORa = 3,40 ; IC 95 % [1,60-7,23]) ; l'IC ne contenant pas 1, l'association est statistiquement significative. »</li>
+<li><strong>OR non significatif</strong> : « L'IC 95 % [0,21-2,66] contient 1 : on ne met pas en évidence d'association. »</li>
+<li><strong>OR &lt; 1</strong> : « ORa = 0,7 [0,5-0,8] : association négative significative ; toutes choses égales par ailleurs, les odds sont environ 30 % plus faibles. »</li>
+<li><strong>Pas de RR en cas-témoins</strong> : « Les sujets étant sélectionnés sur la maladie, la proportion de cas ne reflète pas l'incidence : on ne peut pas calculer de RR. L'OR en est une approximation si l'événement est rare, sans devenir un RR. »</li>
+<li><strong>Causalité</strong> : « L'étude montre une association et non une causalité : exposition mesurée rétrospectivement, temporalité mal établie, confusion résiduelle possible. »</li>
+</ul>
+<div class="piege"><span class="l">Pièges classiques</span>Écrire « risque 3 fois plus élevé » pour un OR de cas-témoins · conclure à la causalité · oublier de regarder si l'IC contient 1 · confondre p (calculé après) et α (fixé avant) · dire qu'un petit p veut dire un gros effet · oublier que l'IC très large (ex. [1,44-23,95]) rend l'estimation imprécise.</div>
+<div class="astuce"><span class="l">Réviser en 20 minutes</span>Relire la fiche 11 (le corrigé), puis faire dans l'appli les unités 6, 7 et 11. La fiche 6 contient les calculs d'OR et de RR à savoir refaire à la main.</div>
+</div>
+</article>
+
+<!-- ============ FICHE 1 ============ -->
+<article class="fiche" id="f1" style="--m:var(--u1)">
+<header>
+  <div class="eyebrow">Fiche 1 · Introduction de l'UE</div>
+  <h1>Observer, analyser, aider à la décision</h1>
+  <div class="who">Mélanie Bertin · Intro UE2 2026</div>
+</header>
+<div class="body">
+<div class="essentiel"><div class="t">L'essentiel en 4 points</div><ol>
+<li>Compétences visées : <strong>analyser les données</strong> sur l'état de santé et ses déterminants pour poser un <strong>diagnostic</strong> ; <strong>repérer les responsabilités</strong> des individus et des organisations (prévention, soin, médico-social) sur un territoire.</li>
+<li>Trois temps : <strong>observation</strong> (décrire), <strong>analyse</strong> (évaluer l'importance des problèmes, avec les déterminants), <strong>aide à la décision</strong> (orienter les interventions).</li>
+<li>Un bon indicateur : défini clairement et de façon standardisée, accessible, valide. Difficultés : disponibilité, petits effectifs, changements de définition.</li>
+<li>L'observateur ne se substitue pas au décideur : il lui donne des éléments objectifs ; d'autres éléments pèsent (contexte, enjeux politiques, économiques, culturels).</li>
+</ol></div>
+<h2><span class="k">1.</span>Les questions de l'UE</h2>
+<ul>
+<li>Comment faire un diagnostic de la situation sanitaire et sociale d'un territoire ?</li>
+<li>Comment mesurer un problème de santé publique : avec quels indicateurs, à partir de quelles sources, avec quels outils de recueil ?</li>
+<li>Quels écueils éviter dans l'analyse et l'interprétation ?</li>
+</ul>
+<h2><span class="k">2.</span>Observation</h2>
+<ul>
+<li>Outil essentiel d'aide à la décision : états des lieux, veilles, diagnostics, évaluations ; quantitative et qualitative ; <strong>du pays à l'IRIS</strong>.</li>
+<li>Repose sur la définition de la santé de l'OMS : épidémiologie, démographie, géographie, anthropologie, ethnographie, sociologie, psychologie, communication…</li>
+<li>Producteurs : SpF, ANSES, ANSM, INRS, IRDES, Insee, Ined, Assurance maladie, DREES, DARES, ORS et FNORS, ARS, établissements, équipes de recherche (Inserm, CNRS, INRAE), enquêtes, associations.</li>
+</ul>
+<h2><span class="k">3.</span>Analyse</h2>
+<p>Préciser l'importance du problème dans la population, <strong>connaître la population avant son état de santé</strong>. Indicateurs : démographiques et socio-économiques, de santé (morbidité, mortalité), offre de soins, utilisation du système de soins, environnementaux. La très (trop ?) grande richesse d'informations exige une interprétation de qualité et un effort de communication (décideurs, professionnels, usagers, population).</p>
+<h2><span class="k">4.</span>Aide à la décision et fable de Lomas</h2>
+<p>Asseoir les décisions sur des bases rationnelles, des critères plus objectifs qu'intuitifs, intégrer le point de vue de tous les acteurs, usagers compris. Une information de qualité pour faire le bon choix au bon moment.</p>
+<div class="def"><span class="l">Fable du scientifique et du décideur</span>Dans un ballon, le décideur demande où il est. Le chercheur : « à environ 50 m du sol ». Le décideur : « réponse parfaitement exacte mais complètement inutile ». Le chercheur : « vous ne savez ni où vous êtes ni où vous allez, mais vous me le reprochez ».<cite>Jonathan Lomas</cite></div>
+<h2><span class="k">5.</span>Organisation</h2>
+<p>Cours, études de cas sur Excel ou Google Sheet, travail de groupe tutoré. Remise du policy brief et des posters le vendredi 2 octobre à 12 h 30. Intervenants cités au planning : Simon Jan (données de santé à l'ORS), Jonathan Roux (SpF, organisation de la santé en France).</p>
+</div>
+</article>
+
+<!-- ============ FICHE 2 ============ -->
+<article class="fiche" id="f2" style="--m:var(--u2)">
+<header>
+  <div class="eyebrow">Fiche 2 · Observer et recueillir</div>
+  <h1>Les sources des données de santé</h1>
+  <div class="who">Mélanie Bertin · Observer et recueillir des données de santé</div>
+</header>
+<div class="body">
+<div class="essentiel"><div class="t">L'essentiel en 5 points</div><ol>
+<li>Deux questions pour tout recueil : <strong>exhaustif ou sur échantillon</strong> ? <strong>continu ou ponctuel</strong> ?</li>
+<li>Cinq familles de données : sanitaires, démographiques, socio-économiques, environnementales, offre et accès aux soins.</li>
+<li>Grandes sources : <strong>SNDS</strong> (PMSI + SNIIRAM), répertoires et <strong>registres</strong>, <strong>enquêtes et études</strong> observationnelles, <strong>surveillance</strong>, objets connectés.</li>
+<li>Le <strong>CépiDc</strong> recueille toutes les causes médicales de décès depuis 1968 (exhaustif, continu, environ 18 mois de délai).</li>
+<li>Les <strong>MDO</strong> : 34 maladies (32 infectieuses, 2 non : mésothéliome, saturnisme de l'enfant), recueil exhaustif et continu.</li>
+</ol></div>
+<h2><span class="k">1.</span>La longue vie des données</h2>
+<div class="grid2">
+<div class="card"><div class="t">Producteurs</div>ARS, DREAL, DGFiP, Insee, IGN, CPAM, instituts de recherche… et vous.</div>
+<div class="card"><div class="t">Diffuseurs</div>Atlasanté, Scansanté, data.gouv…</div>
+<div class="card"><div class="t">Utilisateurs</div>Agents ARS, ministère, animateurs territoriaux, collectivités, associations, grand public.</div>
+</div>
+<h2><span class="k">2.</span>Le SNDS</h2>
+<p>Le Système national des données de santé <strong>rassemble et met à disposition des informations de santé pseudonymisées</strong> collectées par des organismes publics : le <strong>PMSI</strong> (hôpitaux, géré par l'<strong>ATIH</strong>) et le <strong>SNIIRAM</strong> (Assurance maladie : consultations, remboursements ; la <strong>Cnam</strong> est responsable du traitement), avec les causes de décès du <strong>CépiDc</strong>. Un autre acteur réalise les extractions et la mise à disposition pour la recherche, émet un avis sur l'intérêt public d'une étude. <span class="hc">ajout</span> Il s'agit du Health Data Hub (ex-INDS).</p>
+<h2><span class="k">3.</span>Mortalité</h2>
+<div class="grid2">
+<div class="card"><div class="t">Insee · état civil</div>Gère le RNIPP ; les communes transmettent les informations dès qu'un acte d'état civil est dressé.</div>
+<div class="card"><div class="t">CépiDc (Inserm)</div>Recueil exhaustif et permanent des causes médicales de décès depuis le 1<sup>er</sup> janvier 1968, codées en CIM-10 ; 500 000 à 550 000 décès par an ; environ 18 mois de décalage.</div>
+</div>
+<h2><span class="k">4.</span>Registres</h2>
+<div class="def"><span class="l">Définition</span>« Un recueil continu et exhaustif de données nominatives intéressant un ou plusieurs événements de santé dans une population géographiquement définie, à des fins de recherche et de santé publique, par une équipe ayant les compétences appropriées. »<cite>Label obligatoire SpF-Inserm</cite></div>
+<ul>
+<li><strong>Avantage</strong> : très bonne qualité, exhaustivité des cas → estimations nationales possibles.</li>
+<li><strong>Limite</strong> : seulement des territoires restreints (registre des cancers du sein de Loire-Atlantique, des AVC du Finistère).</li>
+<li>Trois domaines : cancers, malformations congénitales, pathologies cardio-neuro-vasculaires. 25 registres des cancers (14 généraux, 11 spécialisés), le plus souvent départementaux.</li>
+</ul>
+<h2><span class="k">5.</span>Études observationnelles</h2>
+<div class="tw"><table>
+<tr><th>Type</th><th>Exemples du cours</th></tr>
+<tr><td>Cohortes</td><td>Constances (généraliste, plus de 200 000 adultes, 2012-2020, questionnaire, prélèvements, examen, appariement aux bases médico-administratives) ; Elfe (plus de 18 000 enfants nés en 2011) ; NutriNet-Santé (171 445 volontaires en ligne depuis 2009) ; E3N-E4N, Gazel, Pélagie</td></tr>
+<tr><td>Transversales</td><td>Enquête risques professionnels (DARES : 1994, 2003, 2010, 2017 ; médecin du travail + auto-questionnaire ; 23 millions de salariés représentés) ; consommations alimentaires INCA (ANSES, environ 5 000 personnes, 3 journées décrites par téléphone) ; Baromètres de SpF depuis 1992</td></tr>
+<tr><td>Cas-témoins</td><td>Rétrospectives par définition ; privilégiées pour une maladie rare ou un délai long ; cas issus de registres ou de bases médico-administratives ; témoins représentatifs des non-malades ou hospitaliers ; appariement sur un ou deux facteurs</td></tr>
+</table></div>
+<h2><span class="k">6.</span>Surveillance</h2>
+<p>Organisation : DGS et CORRUSS, 16 CIRE de SpF, CVAGS des ARS, lien avec l'OMS et la Commission européenne.</p>
+<div class="tw"><table>
+<tr><th>Dispositif</th><th>Grippe</th><th>Covid-19</th></tr>
+<tr><td>Réseau Sentinelles (environ 1 300 MG, remontée hebdomadaire)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Enquêtes en population (Grippenet, COVIDnet)</td><td>✓</td><td>✓</td></tr>
+<tr><td>OSCOUR (93,3 % des passages aux urgences)</td><td>✓</td><td>✓</td></tr>
+<tr><td>SOS Médecins (60 associations)</td><td>✓</td><td>✓</td></tr>
+<tr><td>CépiDc (rétrospectif)</td><td>✓</td><td>✓</td></tr>
+<tr><td>Flunet (tests de laboratoire)</td><td>✓</td><td>✓</td></tr>
+<tr><td>SI-VIC, SI-DEP (PCR)</td><td></td><td>✓</td></tr>
+</table></div>
+<p><strong>MDO</strong> : exhaustif, continu, 34 maladies. Autres sources : certificats de santé, bilans et enquêtes scolaires, maladies à caractère professionnel, expositions professionnelles, objets connectés. <strong>Champ social</strong> : Insee, DREES, CNAF, DREETS (ex-Direccte), ONPES, CNSA, MSA, Oned, Ined. Pour trouver une étude : epidemiologie-france.aviesan.fr.</p>
+</div>
+</article>
+
+<!-- ============ FICHE 3 ============ -->
+<article class="fiche" id="f3" style="--m:var(--u3)">
+<header>
+  <div class="eyebrow">Fiche 3 · Observer et recueillir</div>
+  <h1>Où trouver les données</h1>
+  <div class="who">Mélanie Bertin · observatoires et exercices « À vous de jouer »</div>
+</header>
+<div class="body">
+<h2><span class="k">1.</span>Indicateurs mesurés</h2>
+<p>Pathologies : prévalence, incidence et taux d'incidence, effectifs, séjours hospitaliers, ALD. Mortalité : taux brut et standardisé par cause ou toutes causes, nombre de décès, mortalité prématurée. Comportements : tabac, alcool, drogues, accidents de la route, suicide, médicaments (psychotropes), surpoids et obésité, activité physique.</p>
+<h2><span class="k">2.</span>Données sanitaires</h2>
+<div class="tw"><table>
+<tr><th>Outil</th><th>Producteur</th><th>Contenu</th><th>Exercice du cours</th></tr>
+<tr><td>Data pathologies</td><td>Assurance maladie</td><td>Effectif et prévalence par groupe de pathologies, sexe, âge ; départements, régions ; 2015-2024 ; SNDS (DCIR, PMSI, ALD)</td><td>Prévalence du cancer de la prostate, hommes 60-64 ans, Cantal, 2020</td></tr>
+<tr><td>Odissé</td><td>Santé publique France</td><td>Morbidité (incidence, hospitalisations), mortalité ; par thème ; SNDS, enquêtes, registres, surveillance</td><td>Incidence hospitalière des AVC ischémiques, hommes 18-44 et 75-84 ans, Ille-et-Vilaine, 2023</td></tr>
+<tr><td>Score santé</td><td>ORS / FNORS</td><td>Admissions en ALD, mortalité, espérance de vie, déterminants, environnement, offre ; échelles et périodes très variables</td><td>Admissions en ALD pour maladies circulatoires, hommes de moins de 40 ans, Nouvelle-Aquitaine, 2021-2023</td></tr>
+<tr><td>CépiDc</td><td>Inserm</td><td>Décès, taux bruts et standardisés, par sexe, année, zone, cause</td><td>Taux de mortalité brut des femmes en Guyane en 2004</td></tr>
+</table></div>
+<h2><span class="k">3.</span>Offre de soins</h2>
+<p>Indicateurs : densité (gynécologues pour 100 000 habitants), patients par praticien, accès aux urgences ou à la maternité, taux d'occupation en ambulatoire, dépassements d'honoraires. Sources : <strong>SAE, PMSI, RIAP, RPPS, SNDS, FINESS</strong>. Objectifs : repérer les déserts médicaux, vérifier la couverture, comparer les établissements.</p>
+<div class="grid2">
+<div class="card"><div class="t">Sirsé (Atlasanté)</div>Par et pour les ARS : équipements, lits, urgences, SAMU, imagerie, MCO, SSR, HAD, personnes âgées, handicap, soins palliatifs.</div>
+<div class="card"><div class="t">Cartosanté</div>6 professions : infirmiers, kinés, orthophonistes, dentistes, généralistes, sages-femmes ; 17 ans d'historique ; offre, recours, activité, accessibilité.</div>
+<div class="card"><div class="t">Data professionnels</div>Assurance maladie : une trentaine de professions libérales ; effectif et densité ; 2010-2024.</div>
+<div class="card"><div class="t">Rézone</div>Aide à l'installation des médecins ; Rézone CPTS (diagnostic territorial) ; Rézone Kiné.</div>
+<div class="card"><div class="t">Scansanté</div>Activité et performance des établissements (HospiDiag), flux entre établissements, coûts et finances.</div>
+<div class="card"><div class="t">IRDES</div>Études sur l'offre et le recours aux soins.</div>
+</div>
+<h2><span class="k">4.</span>Socio-démographie, environnement, qualitatif</h2>
+<ul>
+<li><strong>Insee</strong> et 16 services statistiques ministériels (DREES, DARES…) : collecter, produire les données officielles, analyser, contribuer aux statistiques européennes. Thèmes : démographie, conditions de vie, revenus, entreprises, emploi, territoires. Échelles : national, région, département, commune, intercommunalité, arrondissement, aire d'attraction des villes, unité urbaine, zone d'emploi. Outils : statistiques-locales.insee.fr, Observatoire des territoires, Géoportail.</li>
+<li><strong>Environnement</strong> : directive INSPIRE (2007/2/CE) ; inventaire national par l'Ineris, l'Anses et SpF pour le PNSE 4 ; catalogue GD4H. Pollution de l'air, espaces verts (NDVI), eau, déchets, sites industriels, transports, risques (radon, inondation, amiante…).</li>
+<li><strong>Qualitatif</strong> : santé perçue, comportements ; seulement des enquêtes ponctuelles. Indispensable pour interpréter les chiffres, repérer les besoins, recenser les ressources, mobiliser. Entretiens (individuels ou de groupe, directifs ou non, guide, enregistrement) et observation (grille, photos).</li>
+<li><strong>International</strong> : OMS (GHO), OCDE, FAO, CDC, EFSA, Banque mondiale.</li>
+</ul>
+<div class="astuce"><span class="l">Pour le policy brief</span>Au niveau régional, penser aux <strong>ORS</strong> et aux <strong>ARS</strong> pour les données et rapports d'observation sanitaire et sociale.</div>
+</div>
+</article>
+
+<!-- ============ FICHE 4 ============ -->
+<article class="fiche" id="f4" style="--m:var(--u4)">
+<header>
+  <div class="eyebrow">Fiche 4 · Fondamentaux de l'épidémiologie</div>
+  <h1>Épidémiologie et indicateurs</h1>
+  <div class="who">Mélanie Bertin · définitions, branches, morbidité, mortalité</div>
+</header>
+<div class="body">
+<div class="def"><span class="l">Définition</span>« L'épidémiologie étudie la distribution des événements de santé (dans le temps et dans l'espace) et leurs déterminants dans les populations humaines. »<cite>Last J.M., Dictionnaire d'épidémiologie</cite></div>
+<p>Objectifs : identifier l'agent, l'hôte, l'environnement ; hiérarchiser les causes ; repérer les groupes les plus exposés ; évaluer les programmes ; surveiller. Règle des <strong>5W</strong> : What (événement), Who (personne), Where (lieu), When (date), Why/How (causes, transmission).</p>
+<div class="tw"><table>
+<tr><th>Branche</th><th>Objet</th><th>Mesures</th></tr>
+<tr><td>Descriptive</td><td>Distribution dans le temps, l'espace, les groupes ; surveillance</td><td>Prévalence, incidence</td></tr>
+<tr><td>Analytique (étiologique)</td><td>Lien entre exposition et maladie</td><td>Mesures d'association (RR, OR)</td></tr>
+<tr><td>Évaluative</td><td>Résultats des interventions</td><td>Impact, efficacité</td></tr>
+</table></div>
+<h2><span class="k">1.</span>Morbidité</h2>
+<div class="grid2">
+<div class="card"><div class="t">Prévalence</div>Proportion de personnes atteintes <strong>à un moment donné</strong> : cas à l'instant t / population à l'instant t × 100. Ex. : diabète 11,4 % en Guadeloupe contre 3,74 % en Ille-et-Vilaine (2020).</div>
+<div class="card"><div class="t">Incidence</div><strong>Nouveaux cas pendant une période</strong> : en nombre, en incidence cumulée (%) ou en taux (par unité de temps). Suivi des épidémies (dengue, Covid-19).</div>
+</div>
+<div class="astuce"><span class="l">L'exemple des 8 sujets</span>2 sujets déjà malades au début, 3 nouveaux cas pendant la période. <strong>Prévalence</strong> de période = 5/8. <strong>Incidence</strong> = 3/6 (nouveaux cas sur les sujets sains au départ).</div>
+<h2><span class="k">2.</span>Mortalité et létalité</h2>
+<ul>
+<li><strong>Taux brut de mortalité</strong> : décès sur la période / effectif moyen de la population × 10<sup>n</sup> (pour 1 000, 10 000 ou 100 000).</li>
+<li><strong>Taux standardisé (ajusté)</strong> : neutralise les différences de <strong>structure d'âge</strong> entre populations comparées. Exemple Scansanté (chirurgie 2018) : Rennes brut 75,5 / standardisé 81,1 (population jeune) ; Saint-Malo 94,8 / 85,5 (population âgée).</li>
+<li><strong>Létalité</strong> : décès dus à la maladie / cas de la maladie × 100.</li>
+</ul>
+<div class="piege"><span class="l">Létalité apparente du Covid</span>Juin 2020 : 28 940 décès pour 151 325 cas confirmés → létalité apparente de 19 %, mortalité de 432 par million. Létalité réelle estimée : 0,7 % (Institut Pasteur), 0,5 à 1 % (OMS). Le dénominateur ne compte que les cas détectés : mauvais indicateur pendant une pandémie.</div>
+</div>
+</article>
+
+<!-- ============ FICHE 5 ============ -->
+<article class="fiche" id="f5" style="--m:var(--u5)">
+<header>
+  <div class="eyebrow">Fiche 5 · Fondamentaux de l'épidémiologie</div>
+  <h1>Les types d'études</h1>
+  <div class="who">Mélanie Bertin · synthèse de J. Roux</div>
+</header>
+<div class="body">
+<p>Études <strong>observationnelles</strong> (descriptives : transversale, écologique ; étiologiques : cohorte, cas-témoins) et <strong>expérimentales</strong> (essais thérapeutiques, études d'intervention, randomisées ou non).</p>
+<div class="tw"><table>
+<tr><th>Étude</th><th>Sélection</th><th>Temps</th><th>Mesure</th><th>Limites</th></tr>
+<tr><td>Cohorte prospective</td><td>Sujets indemnes, selon l'exposition</td><td>Suivi dans le futur</td><td>Incidence → RR</td><td>Longue, chère, perdus de vue</td></tr>
+<tr><td>Cohorte rétrospective</td><td>Exposition passée reconstituée</td><td>Événement déjà connu à l'inclusion</td><td>RR</td><td>Qualité des données passées</td></tr>
+<tr><td>Cas-témoins</td><td>Selon la maladie (1 cas pour N témoins, même population source)</td><td>Rétrospective</td><td>OR</td><td>Biais de mémoire, de sélection ; pas de RR</td></tr>
+<tr><td>Transversale</td><td>Ni exposition ni maladie</td><td>Un seul temps t</td><td>Prévalence</td><td>Temporalité ; absents exclus (sélection)</td></tr>
+<tr><td>Écologique</td><td>Groupes (pays, régions, villes)</td><td>Période</td><td>Corrélation</td><td>Biais écologique ; confusion au niveau des groupes</td></tr>
+</table></div>
+<h2><span class="k">1.</span>Cas-témoins ou cohorte</h2>
+<div class="tw"><table>
+<tr><th>Critère</th><th>Cas-témoins</th><th>Cohorte</th></tr>
+<tr><td>Taille, coûts, durée</td><td>Petit, moindres, court</td><td>Grand, élevés, long</td></tr>
+<tr><td>Maladie rare</td><td>Avantage</td><td>Désavantage</td></tr>
+<tr><td>Exposition rare</td><td>Désavantage</td><td>Avantage</td></tr>
+<tr><td>Plusieurs expositions</td><td>Avantage</td><td>Désavantage</td></tr>
+<tr><td>Plusieurs maladies, histoire naturelle</td><td>Désavantage</td><td>Avantage</td></tr>
+<tr><td>Taux de maladie</td><td>Non mesurable</td><td>Mesurable</td></tr>
+<tr><td>Biais de mémorisation, de sélection</td><td>Problème potentiel</td><td>Moins problématique</td></tr>
+<tr><td>Perdus de vue</td><td>Avantage</td><td>Problème potentiel</td></tr>
+</table></div>
+<h2><span class="k">2.</span>Exemples à reconnaître</h2>
+<ul>
+<li><strong>Cohortes</strong> : Constances (220 000 adultes de 18 à 69 ans, 17 départements, 2012-2021, examen tous les 5 ans) ; Elfe (18 000 enfants, 344 maternités, 2011) ; Gazel (20 000 agents EDF-GDF depuis 1989, 107 perdus de vue en 2008) ; NutriNet (174 000 adultes depuis 2009).</li>
+<li><strong>Cas-témoins</strong> : origine ethnique et sévérité du Covid (sud de Londres, 2020) ; charcuterie et cancer colorectal (500 cas, 500 témoins appariés sur âge, sexe, région).</li>
+<li><strong>Écologique</strong> : espaces verts et maladies cardiovasculaires à Jingzhou (Chine) ; impact de la pollution de l'air. Avantages : peu coûteuse, simple, données non individuelles (législation, ensoleillement).</li>
+</ul>
+</div>
+</article>
+
+<!-- ============ FICHE 6 ============ -->
+<article class="fiche" id="f6" style="--m:var(--u6)">
+<header>
+  <div class="eyebrow">Fiche 6 · Fondamentaux de l'épidémiologie</div>
+  <h1>Mesures d'association</h1>
+  <div class="who">Mélanie Bertin · d'après N. Le Meur</div>
+</header>
+<div class="body">
+<div class="tw"><table>
+<tr><th></th><th>Malades (M+)</th><th>Non-malades (M−)</th></tr>
+<tr><td>Exposés (E+)</td><td>a</td><td>b</td></tr>
+<tr><td>Non-exposés (E−)</td><td>c</td><td>d</td></tr>
+</table></div>
+<div class="grid2">
+<div class="card"><div class="t">Risque relatif (RR)</div>R1 = a/(a+b), R0 = c/(c+d), <strong>RR = R1/R0</strong>. Cohorte. RR = 3 : probabilité de maladie 3 fois plus élevée chez les exposés.</div>
+<div class="card"><div class="t">Odds ratio (OR)</div><strong>OR = (a×d)/(b×c)</strong>. Cas-témoins : ne dépend pas de la proportion de malades de l'échantillon. <strong>OR ≈ RR si maladie rare (&lt; 5 %)</strong>.</div>
+</div>
+<p>RR ou OR = 1 : pas d'association ; &gt; 1 : association positive ; &lt; 1 : facteur protecteur.</p>
+<h2><span class="k">1.</span>Calculs du cours à refaire</h2>
+<div class="astuce"><span class="l">Tabac et cancer</span>Fumeurs 20 cancers / 80 sans ; non-fumeurs 10 / 90. R1 = 20 %, R0 = 10 %, <strong>RR = 2</strong> ; <strong>OR = (20×90)/(80×10) = 2,25</strong>.</div>
+<div class="astuce"><span class="l">Tableau 5 / 8 / 2 / 23</span>R1 = 5/13 ≈ 0,385 ; R0 = 2/25 = 0,08 ; <strong>RR ≈ 4,8</strong> ; <strong>OR = 115/16 ≈ 7,2</strong>. La maladie est fréquente dans l'échantillon, d'où l'écart entre OR et RR. <span class="hc">calcul ajouté</span></div>
+<h2><span class="k">2.</span>Significativité</h2>
+<p>On se donne une marge d'erreur, en général de 5 % : <strong>IC 95 % contenant 1 → pas d'association</strong> ; ne contenant pas 1 → association significative. Ex. : amiante et mésothéliome, RR = 3,5 [1,8-7,0].</p>
+<h2><span class="k">3.</span>Autres mesures</h2>
+<ul>
+<li><strong>Excès de risque</strong> : R = R1 − R0 (0 = pas d'association).</li>
+<li><strong>Fraction de risque attribuable</strong> (population) : FRA = pe(RR − 1) / [1 + pe(RR − 1)], pe = fréquence de l'exposition. Ex. pe = 0,3 et RR = 2 → 23 %. <span class="hc">exemple ajouté</span></li>
+<li><strong>Fraction étiologique chez les exposés</strong> : FER = (RR − 1)/RR. RR = 2 → 50 %.</li>
+<li>Dans ces formules, on peut remplacer RR par OR. Exemple du cours : fractions de cancers attribuables au mode de vie et à l'environnement en France en 2015 (Marant-Micallef et al., BEH 2018).</li>
+</ul>
+</div>
+</article>
+
+<!-- ============ FICHE 7 ============ -->
+<article class="fiche" id="f7" style="--m:var(--u7)">
+<header>
+  <div class="eyebrow">Fiche 7 · Fondamentaux de l'épidémiologie</div>
+  <h1>Biais et causalité</h1>
+  <div class="who">Mélanie Bertin</div>
+</header>
+<div class="body">
+<div class="grid2">
+<div class="card"><div class="t">Biais de sélection</div>Distorsion à la constitution de l'échantillon : la population source diffère de la population cible.</div>
+<div class="card"><div class="t">Biais d'information (mesure)</div>Mauvaise classification des sujets (symptômes, exposition…) : erreur de mesure, biais de l'enquêteur, de déclaration, de mémorisation.</div>
+<div class="card"><div class="t">Biais de confusion</div>Interférence d'un facteur extérieur non pris en compte dans la relation exposition-maladie.</div>
+</div>
+<div class="def"><span class="l">Facteur de confusion</span>Variable associée à l'exposition, associée à la maladie, et qui n'est pas une étape intermédiaire du mécanisme causal. On la mesure pour <strong>ajuster</strong> (OR ajusté).<cite>Corrigé de lecture critique</cite></div>
+<h2><span class="k">1.</span>Facteur de risque n'est pas cause</h2>
+<p>Si une étude sans biais montre que le risque augmente avec l'exposition, le facteur est un <strong>facteur de risque</strong>, sans que la causalité soit démontrée. Seul un corpus de résultats (épidémiologiques, toxicologiques, cliniques ; revues, méta-analyses) apporte une preuve : la vie réelle n'est pas une expérience et les pathologies ont des causes multiples.</p>
+<h2><span class="k">2.</span>Les 9 critères de Bradford Hill</h2>
+<ol>
+<li><strong>Force</strong> de l'association (un faible effet n'exclut pas la causalité).</li>
+<li><strong>Stabilité</strong> : répétition dans le temps, l'espace, d'autres populations.</li>
+<li><strong>Cohérence</strong> avec les connaissances actuelles.</li>
+<li><strong>Spécificité</strong> : une cause, un effet particulier, sans autre explication.</li>
+<li><strong>Temporalité</strong> : la cause précède l'effet.</li>
+<li><strong>Dose-effet</strong>.</li>
+<li><strong>Plausibilité</strong> biologique.</li>
+<li><strong>Preuve expérimentale</strong> (animal ou humain).</li>
+<li><strong>Analogie</strong> avec d'autres relations causales.</li>
+</ol>
+<div class="piege"><span class="l">Effet cigogne</span>« Consommation de chocolat et nombre de prix Nobel » (NEJM, 2012) : corrélation n'est pas causalité.</div>
+</div>
+</article>
+
+<!-- ============ FICHE 8 ============ -->
+<article class="fiche" id="f8" style="--m:var(--u8)">
+<header>
+  <div class="eyebrow">Fiche 8 · Fondamentaux de l'analyse quantitative</div>
+  <h1>Décrire des données</h1>
+  <div class="who">Mélanie Bertin · variables, indicateurs, graphiques</div>
+</header>
+<div class="body">
+<p><strong>Unité statistique</strong> : élément de base décrit par des variables (individu, hôpital, séjour, communauté urbaine). Ex. : enquête HBSC 2006 (l'élève), open data PMSI (l'acte).</p>
+<div class="tw"><table>
+<tr><th>Qualitative (catégorielle)</th><th>Quantitative</th></tr>
+<tr><td><strong>Binaire</strong> (2 modalités) · <strong>nominale</strong> (sans ordre) · <strong>ordinale</strong> (ordre qui a un sens, écarts sans sens : douleur, classe ATP). Dénombrements et fréquences seulement.</td><td><strong>Discrète</strong> (entier : 1, 2, 3 enfants) · <strong>continue</strong> (1,6 m ; 1,7 m). Moyenne, médiane, dispersion.</td></tr>
+</table></div>
+<h2><span class="k">1.</span>Position et dispersion</h2>
+<div class="tw"><table>
+<tr><th>Indicateur</th><th>Définition</th><th>Plus</th><th>Moins</th></tr>
+<tr><td>Moyenne</td><td>Somme / effectif</td><td>Simple, tests usuels</td><td>Sensible aux extrêmes et à la forme</td></tr>
+<tr><td>Médiane</td><td>Coupe en deux groupes de même taille</td><td>Insensible aux extrêmes</td><td>Pas de tests usuels</td></tr>
+<tr><td>Quantiles</td><td>Quartiles (4), quintiles (5), déciles (10)</td><td>D9/D1 : écart des revenus</td><td></td></tr>
+<tr><td>Étendue</td><td>Max − min</td><td>Simple</td><td>Donner plutôt min et max</td></tr>
+<tr><td>Variance, écart-type</td><td>Écart-type = √variance : écart moyen (quadratique) à la moyenne</td><td>Accompagne la moyenne</td><td></td></tr>
+<tr><td>Écart interquartile</td><td>Q3 − Q1 : les 50 % centraux</td><td>Accompagne la médiane ; boîte à moustaches</td><td>Extrêmes : au-delà de Q3 + 1,5 × IQR</td></tr>
+</table></div>
+<div class="piege"><span class="l">Toujours position ET dispersion</span>Deux files d'attente à 6 min de moyenne : étendues de 3 et 13 min. Moyenne ≈ 4 mais médiane = 1,8 (UNICEF) : distribution asymétrique.</div>
+<div class="def"><span class="l">Intervalle de confiance</span>Plage de valeurs qui a une probabilité (théorique) de contenir la vraie valeur du paramètre dans la population (moyenne, proportion, effectif…).</div>
+<h2><span class="k">2.</span>Graphiques</h2>
+<ul>
+<li><strong>Histogramme</strong> : quantitative continue (la largeur de classe change l'allure). À ne pas confondre avec le <strong>diagramme en barres</strong> : qualitative.</li>
+<li><strong>Diagramme circulaire</strong> : qualitative, peu de modalités, afficher effectifs ou %.</li>
+<li><strong>Courbe épidémique</strong> : cas par semaine (dengue en Guyane 2006-2007, virus grippaux 2010-2014).</li>
+<li><strong>Cartes</strong> : par région ou canton (ratio de mortalité standardisé, environnement socio-économique).</li>
+<li>À éviter : 3D, camemberts surchargés, trop de modalités.</li>
+</ul>
+</div>
+</article>
+
+<!-- ============ FICHE 9 ============ -->
+<article class="fiche" id="f9" style="--m:var(--u9)">
+<header>
+  <div class="eyebrow">Fiche 9 · Fondamentaux de l'analyse quantitative</div>
+  <h1>Les tests statistiques</h1>
+  <div class="who">Mélanie Bertin · d'après T. Ancelle et N. Le Meur</div>
+</header>
+<div class="body">
+<p>Question : l'écart observé est-il une <strong>vraie différence</strong> ou une <strong>fluctuation d'échantillonnage</strong> ? Exemple : VGM moyen de 94,7 µm³ chez 30 employés de bureau contre 92,5 chez 30 ouvriers.</p>
+<div class="grid2">
+<div class="card"><div class="t">H0 (nulle)</div>Paramètre population 1 = population 2 (µ1 = µ2).</div>
+<div class="card"><div class="t">H1 (alternative)</div>µ1 ≠ µ2. Si H0 est rejetée, on accepte H1.</div>
+</div>
+<div class="tw"><table>
+<tr><th>Notion</th><th>Définition</th></tr>
+<tr><td>Risque α (1<sup>re</sup> espèce)</td><td>Rejeter H0 à tort. Jugé plus grave. Fixé <strong>a priori</strong>, en général 5 % (ou 1 %).</td></tr>
+<tr><td>Risque β (2<sup>e</sup> espèce)</td><td>Accepter H0 à tort.</td></tr>
+<tr><td>Puissance</td><td>Rejeter H0 à raison.</td></tr>
+<tr><td>p (p-value)</td><td>Risque de se tromper en rejetant H0, calculé <strong>a posteriori</strong>. p &lt; α → on rejette H0.</td></tr>
+</table></div>
+<div class="piege"><span class="l">p n'est pas la taille de l'effet</span>Un p très faible veut dire que le risque de se tromper est faible, pas que la différence est grande. VGM : écart 2,2 ; p = 0,0042 &lt; 0,05 → différence significative.</div>
+<h2><span class="k">1.</span>Choisir le test</h2>
+<ul>
+<li>Variable <strong>quantitative</strong> entre deux groupes → <strong>Student</strong> ou <strong>Mann-Whitney</strong>.</li>
+<li>Variable <strong>qualitative</strong> → <strong>Chi2</strong> ou <strong>test exact de Fisher</strong>.</li>
+<li><span class="hc">ajout</span> Conditions : Chi2 si effectifs théoriques suffisants (en pratique ≥ 5), sinon Fisher ; Student si distribution normale et variances comparables, sinon Mann-Whitney.</li>
+</ul>
+<h2><span class="k">2.</span>Le Chi2 pas à pas</h2>
+<ol>
+<li>Effectif théorique = total ligne × total colonne / effectif total.</li>
+<li>Chi2 = Σ (observé − théorique)² / théorique.</li>
+<li>Comparer au seuil : 3,84 pour 1 degré de liberté à α = 0,05.</li>
+</ol>
+</div>
+</article>
+
+<!-- ============ FICHE 10 ============ -->
+<article class="fiche" id="f10" style="--m:var(--u10)">
+<header>
+  <div class="eyebrow">Fiche 10 · Exercices d'analyse quantitative</div>
+  <h1>Exercices corrigés</h1>
+  <div class="who">Proposition de corrigé à partir des graphiques et tableaux du document (pas de corrigé officiel fourni)</div>
+</header>
+<div class="body">
+<h2><span class="k">1.</span>Temps d'accès aux spécialistes libéraux (2007)</h2>
+<details><summary>Quel graphique ? Quel type de variable ?</summary><div class="in">Une <strong>boîte à moustaches</strong> (box plot) enrichie. « Temps d'accès en minutes au plus proche ophtalmologiste » : <strong>quantitative continue</strong>.</div></details>
+<details><summary>Les 5 indicateurs pour les ophtalmologistes</summary><div class="in">(1) <strong>Moyenne</strong> ≈ 10 min : en moyenne, la population est à 10 min. (2) <strong>Médiane</strong> ≈ 4 min : la moitié de la population est à moins de 4 min. (3) <strong>3<sup>e</sup> quartile</strong> ≈ 17 min : 75 % sont à moins de 17 min. (4) <strong>90<sup>e</sup> percentile</strong> ≈ 26 min : 10 % mettent plus de 26 min. (5) <strong>95<sup>e</sup> percentile</strong> ≈ 31 min : 5 % mettent plus de 31 min. Moyenne &gt; médiane : distribution asymétrique, tirée par les longs trajets. Valeurs lues sur le graphique, à ± 1 min.</div></details>
+<details><summary>Autre indicateur autour de la moyenne ? 25 % en 0 minute ?</summary><div class="in">L'<strong>écart-type</strong>. Oui : pour toutes les spécialités, le bas de la boîte (1<sup>er</sup> quartile) est à 0 : au moins 25 % de la population vit dans une commune équipée.</div></details>
+<details><summary>Graphique 2 : part des communes avec au moins un spécialiste</summary><div class="in"><strong>Diagramme en barres groupées</strong>. Ex. : en 2007, environ 3,25 % des communes ont au moins un ophtalmologiste libéral (2,3 % en 1982 : amplitude ≈ 1 point). Tendance générale à la hausse, mais pas partout : pédiatres, gynécologues-obstétriciens et ORL reculent entre 1990 et 2007 ; urologues stables de 1982 à 1990 puis en hausse. Données brutes : unité statistique = la commune ; variables = présence d'au moins un spécialiste de chaque type (oui/non) en 1982, 1990, 2007.</div></details>
+<details><summary>Cartes d'accessibilité et test</summary><div class="in">« Accessibilité en 15 min du généraliste » : variable <strong>qualitative binaire</strong> (un temps continu découpé). Temps d'accès aux maternités présenté par classes : <strong>qualitative ordinale</strong> issue d'une variable continue. 12 % contre 6 % : <strong>on ne peut pas conclure</strong> à une différence significative sans test ni intervalle de confiance.</div></details>
+<details><summary>Test de Student sur les distances 1990-2006</summary><div class="in">On cherche si la distance moyenne d'accès diffère vraiment entre 1990 et 2006 ou si l'écart est dû au hasard. <strong>H0</strong> : distance moyenne 1990 = distance moyenne 2006 ; <strong>H1</strong> : elles diffèrent. On rejette H0 si p &lt; 0,05 (à lire dans le tableau 1 pour les ophtalmologistes et les radiologues).</div></details>
+<h2><span class="k">2.</span>Activité physique, Baromètre de SpF 2021</h2>
+<div class="tw"><table>
+<tr><th>Indicateur</th><th>Hommes</th><th>Femmes</th><th>p</th><th>Lecture</th></tr>
+<tr><td>Atteinte des recommandations d'AP</td><td>72,9 %</td><td>59,3 %</td><td>&lt; 0,001</td><td>Différence significative</td></tr>
+<tr><td>Renforcement musculaire</td><td>31,1 %</td><td>20,2 %</td><td>&lt; 0,001</td><td>Significative</td></tr>
+<tr><td>Sédentarité élevée (&gt; 7 h assis)</td><td>23,3 %</td><td>22,2 %</td><td>0,09</td><td>Non significative</td></tr>
+<tr><td>Écrans de loisirs &gt; 3 h/j</td><td>39,3 %</td><td>39,0 %</td><td>0,67</td><td>Non significative</td></tr>
+<tr><td>Rupture de sédentarité toutes les 2 h</td><td>91,4 %</td><td>92,0 %</td><td>0,16</td><td>Non significative</td></tr>
+<tr><td>AP insuffisante + sédentarité élevée</td><td>8,6 %</td><td>9,9 %</td><td>&lt; 0,01</td><td>Significative, plus chez les femmes</td></tr>
+</table></div>
+<p>Le Chi2 (Pearson avec correction de Rao-Scott) compare les proportions entre hommes et femmes. <strong>H0</strong> : la proportion atteignant les recommandations est la même chez les hommes et les femmes (indépendance) ; <strong>H1</strong> : elle diffère.</p>
+<details><summary>Tableau 3 : facteurs associés (ORa)</summary><div class="in"><strong>Hommes, situation professionnelle</strong> (réf. travail) : chômage 0,7 [0,5-0,8] et autres inactifs 0,5 [0,3-0,7] défavorables ; études 0,8 et retraite 1,3 [1,0-1,6] non significatifs.<br><strong>Femmes, ménage</strong> (réf. seule) : couple avec enfant(s) 0,8 [0,7-0,9], association négative ; les autres ne sont pas significatives.<br><strong>Âge</strong> (réf. 45-54 ans) : chez les hommes, les 18-24 ans (1,7), 25-34 (1,2) et 35-44 (1,3) font mieux, les 75-85 moins bien (0,6) ; chez les femmes, pas d'avantage des jeunes, moins bien à 55-64 (0,8) et 75-85 ans (0,7).<br><strong>Diplôme</strong> (réf. bac) : moins que le bac défavorable, surtout chez les femmes (0,7). <strong>Agglomération parisienne</strong> : 0,7 dans les deux sexes ; rural favorable chez les hommes (1,2).<br><strong>ORa</strong> : odds ratio calculé en tenant compte simultanément des autres variables du modèle (toutes choses égales par ailleurs).</div></details>
+<details><summary>Le Chi2 à la main (échantillon fictif de 200)</summary><div class="in">Observés : hommes 73 atteignent / 27 non ; femmes 59 / 41 ; totaux 132 / 68.<br>Théoriques : 100 × 132 / 200 = <strong>66</strong> et 100 × 68 / 200 = <strong>34</strong>, pour chaque sexe.<br>Chi2 = (73−66)²/66 + (27−34)²/34 + (59−66)²/66 + (41−34)²/34 = 0,74 + 1,44 + 0,74 + 1,44 ≈ <strong>4,37</strong>.<br>4,37 &gt; 3,84 : on rejette H0, <strong>association significative</strong> entre sexe et atteinte des recommandations. Même sens que les vraies données (72,9 % contre 59,3 %, p &lt; 0,001), où l'échantillon bien plus grand donne un p beaucoup plus petit.</div></details>
+<details><summary>Synthèse : limites et réflexes</summary><div class="in">Limites : la moyenne cache la dispersion et est tirée par les extrêmes ; la médiane ne dit rien des extrêmes ; une étendue seule trompe ; découper une variable en classes perd de l'information. Réflexes : regarder moyenne ET médiane, toujours une dispersion ; vérifier le type de variable et de graphique ; ne pas conclure à une différence sans test ou IC ; lire p avec la taille de l'effet ; vérifier l'IC autour de 1 pour un OR.</div></details>
+</div>
+</article>
+
+<!-- ============ FICHE 11 ============ -->
+<article class="fiche" id="f11" style="--m:var(--u11)">
+<header>
+  <div class="eyebrow">Fiche 11 · Lecture critique d'article · corrigé</div>
+  <h1>Écrans et troubles primaires du langage</h1>
+  <div class="who">« L'exposition aux écrans chez les jeunes enfants est-elle à l'origine de l'apparition de troubles primaires du langage ? Une étude cas-témoins en Ille-et-Vilaine »</div>
+</header>
+<div class="body">
+<div class="essentiel"><div class="t">L'étude en 5 lignes</div><ol>
+<li><strong>Cas-témoins</strong> : 276 enfants (167 cas, 109 témoins), âge moyen 5,2 ± 0,8 ans.</li>
+<li>Exposition mesurée par <strong>questionnaire parental</strong> (identique, testé sur 32 personnes).</li>
+<li>Ajustement : sexe, frères et sœurs plus âgés, situation familiale, niveau d'études des parents.</li>
+<li>Modèle final : écrans <strong>le matin avant l'école</strong> ORa 3,40 [1,60-7,23] ; <strong>discuter rarement ou jamais</strong> du contenu ORa 2,14 [1,01-4,54] ; les deux : ORa 5,86 [1,44-23,95].</li>
+<li>Association, <strong>pas causalité</strong>.</li>
+</ol></div>
+<details><summary>1 · L'introduction</summary><div class="in">Structurée, elle justifie la question : contexte (exposition croissante des jeunes enfants), problème (troubles primaires du langage), hypothèse, connaissances antérieures (associations déjà retrouvées), limite des études antérieures (surtout la télévision), objectif (associer différents types d'écrans aux troubles).</div></details>
+<details><summary>2 · Pourquoi un cas-témoins ?</summary><div class="in">Le trouble est relativement peu fréquent (4 à 6 %). On sélectionne directement les cas et des témoins, puis on recherche rétrospectivement l'exposition. Une cohorte (suivre exposés et non-exposés) aurait été plus longue, plus coûteuse et moins efficiente.</div></details>
+<details><summary>3 et 4 · Critères, cas et témoins</summary><div class="in"><strong>Inclusion</strong> : nés entre 2010 et 2012, 3,5 à 6,5 ans ; cas suivis par un orthophoniste pour trouble primaire ; témoins suivis par un généraliste sans besoin d'orthophonie. <strong>Exclusion</strong> : causes possibles de trouble secondaire (prématurité, maladie congénitale, troubles neurologiques, psychiatriques, auditifs) ; aucun parent parlant français à la maison.</div></details>
+<details><summary>5 · Mesure de l'exposition</summary><div class="in">Questionnaire parental : types et nombre d'écrans, écrans personnels, âge de première exposition, durée, moments, accompagnement parental. Mesure <strong>déclarée, non objective</strong> : biais de mémorisation, peur du jugement, possible biais <strong>différentiel</strong> entre parents de cas et de témoins.</div></details>
+<details><summary>6 · Facteur de confusion</summary><div class="in">Variable associée à l'exposition et à la maladie, sans être une étape intermédiaire du mécanisme. Recueillis : âge, sexe, fratrie, situation familiale, âge des parents, niveau d'études, CSP. Retenus pour l'ajustement : sexe, frères et sœurs plus âgés, situation familiale, niveau d'études des parents.</div></details>
+<details><summary>7 · Tableau 1</summary><div class="in">276 enfants (109 témoins, 167 cas), 5,2 ± 0,8 ans. Plus de garçons chez les cas (70,7 % contre 50,5 %, p = 0,0007). Différences aussi : fratrie plus âgée, situation familiale, études des parents. Âge quantitatif → moyenne ± écart-type, comparé par Student ou Mann-Whitney ; sexe qualitatif → n (%), comparé par Chi2 ou Fisher.</div></details>
+<details><summary>8 · Tableau 2 : OR et OR ajustés</summary><div class="in">Matin avant l'école : OR 2,82 [1,63-4,87] → ORa 3,42 [1,64-7,14] : reste significatif. Accès à la télévision : OR 2,74 [0,96-7,77] → ORa 0,75 [0,21-2,66] : l'estimation change fortement et l'IC contient 1, pas d'association mise en évidence (l'OR brut n'était déjà pas significatif, de justesse). L'ORa tient compte simultanément des facteurs d'ajustement.</div></details>
+<details><summary>9 · Tableau 3</summary><div class="in">Après sélection pas à pas, deux variables restent associées. « À facteurs pris en compte dans le modèle, les enfants exposés le matin avant l'école ont des odds de présenter un trouble primaire du langage environ 3,4 fois supérieures. »</div></details>
+<details><summary>10 et 11 · Recalculer les OR ? Un RR ?</summary><div class="in">Il manque les effectifs croisés exposition × maladie (a, b, c, d). Pas de RR : sélection sur la maladie, la proportion de cas ne reflète pas l'incidence. L'OR approche le RR si l'événement est rare, sans le devenir.</div></details>
+<details><summary>12 · La variable composite</summary><div class="in">Croisement des deux facteurs du modèle final : 4 modalités (aucun, matin seul, discussion rare seule, les deux). Référence : aucun. Les deux : ORa 5,86 [1,44-23,95].</div></details>
+<details><summary>13 · À retenir</summary><div class="in">Deux facteurs associés après analyses multivariées (matin 3,40 ; discussion rare 2,14 ; les deux 5,86). Une association, pas une preuve de causalité.</div></details>
+<details><summary>14 · Limites</summary><div class="in"><strong>Citées</strong> : biais de classement (bilan orthophonique non recueilli) ; biais de déclaration (souvenir, peur du jugement) ; confusion résiduelle ; saison (été, mais même effet chez cas et témoins) ; biais de sélection (faible participation des généralistes, aucun témoin dans 9 communes).<br><strong>Non citées</strong> : causalité inverse (le trouble peut modifier l'usage des écrans) ; témoins recrutés chez les généralistes, cas chez les orthophonistes ; multiplicité des tests ; sélection pas à pas (modèles instables, estimations optimistes) ; IC très larges.</div></details>
+<details><summary>15 · Le résumé</summary><div class="in">Il interprète l'OR comme un RR. Formulation juste : « les odds de présenter un trouble primaire du langage étaient 3,4 fois plus élevées » (écrans le matin) et « environ 5,9 fois plus élevées chez les enfants présentant les deux caractéristiques ».</div></details>
+</div>
+</article>
+
+<!-- ============ FORMULAIRE ET LEXIQUE ============ -->
+<article class="fiche" id="formulaire" style="--m:var(--brand)">
+<header>
+  <div class="eyebrow">Formulaire et lexique</div>
+  <h1>Tout ce qu'il faut savoir calculer et définir</h1>
+  <div class="who">Les formules du cours sur une page</div>
+</header>
+<div class="body">
+<div class="tw"><table>
+<tr><th>Mesure</th><th>Formule</th></tr>
+<tr><td>Prévalence</td><td>cas à l'instant t / population à l'instant t × 100</td></tr>
+<tr><td>Incidence cumulée</td><td>nouveaux cas sur la période / sujets sains au début</td></tr>
+<tr><td>Taux brut de mortalité</td><td>décès sur la période / population moyenne × 10<sup>n</sup></td></tr>
+<tr><td>Létalité</td><td>décès dus à la maladie / cas de la maladie × 100</td></tr>
+<tr><td>Risque relatif</td><td>[a/(a+b)] / [c/(c+d)]</td></tr>
+<tr><td>Odds ratio</td><td>(a × d) / (b × c)</td></tr>
+<tr><td>Excès de risque</td><td>R1 − R0</td></tr>
+<tr><td>Fraction attribuable (population)</td><td>pe(RR − 1) / [1 + pe(RR − 1)]</td></tr>
+<tr><td>Fraction étiologique (exposés)</td><td>(RR − 1) / RR</td></tr>
+<tr><td>Effectif théorique (Chi2)</td><td>total ligne × total colonne / total</td></tr>
+<tr><td>Chi2</td><td>Σ (observé − théorique)² / théorique ; seuil 3,84 (1 ddl, α = 5 %)</td></tr>
+<tr><td>Écart-type</td><td>√ variance</td></tr>
+<tr><td>Écart interquartile</td><td>Q3 − Q1</td></tr>
+</table></div>
+<h2 id="lex"><span class="k">★</span>Lexique</h2>
+<dl class="lex">
+<dt>ALD</dt><dd>Affection de longue durée, prise en charge par l'Assurance maladie ; indicateur de morbidité.</dd>
+<dt>ATIH</dt><dd>Agence technique de l'information sur l'hospitalisation, en charge du PMSI.</dd>
+<dt>Biais écologique</dt><dd>Conclure sur des individus à partir de données agrégées.</dd>
+<dt>CépiDc</dt><dd>Centre d'épidémiologie sur les causes médicales de décès (Inserm), depuis 1968.</dd>
+<dt>CIRE</dt><dd>Cellule interrégionale d'épidémiologie de Santé publique France.</dd>
+<dt>Cohorte</dt><dd>Suivi dans le temps de sujets indemnes, selon leur exposition.</dd>
+<dt>CVAGS</dt><dd>Cellule de veille, d'alerte et de gestion sanitaire (ARS).</dd>
+<dt>FINESS</dt><dd>Fichier national des établissements sanitaires et sociaux.</dd>
+<dt>IC 95 %</dt><dd>Plage qui a 95 % de chances de contenir la vraie valeur ; pour un OR ou un RR, significatif s'il ne contient pas 1.</dd>
+<dt>MDO</dt><dd>Maladie à déclaration obligatoire : 34, recueil exhaustif et continu.</dd>
+<dt>OR ajusté</dt><dd>OR tenant compte simultanément des autres facteurs du modèle.</dd>
+<dt>OSCOUR</dt><dd>Réseau de surveillance des passages aux urgences (93,3 %).</dd>
+<dt>PMSI</dt><dd>Programme de médicalisation des systèmes d'information : activité des hôpitaux.</dd>
+<dt>p-value</dt><dd>Risque, calculé après le test, de se tromper en rejetant H0.</dd>
+<dt>Registre</dt><dd>Recueil continu, exhaustif, nominatif, sur un territoire défini.</dd>
+<dt>RNIPP</dt><dd>Répertoire national d'identification des personnes physiques (Insee).</dd>
+<dt>RPPS</dt><dd>Répertoire partagé des professionnels de santé.</dd>
+<dt>SNDS</dt><dd>Système national des données de santé : données pseudonymisées (PMSI, SNIIRAM, causes de décès).</dd>
+<dt>SNIIRAM</dt><dd>Système national d'information inter-régimes de l'Assurance maladie.</dd>
+<dt>Standardisation</dt><dd>Neutraliser les différences de structure d'âge (et de sexe) pour comparer des territoires.</dd>
+</dl>
+<p class="foot">Fiches construites à partir des sept documents de l'UE2 · à réviser avec l'application <a href="./">Vigie</a>.</p>
+</div>
+</article>
+</main>
+
+<button class="up" id="up" aria-label="Revenir en haut">↑</button>
+<script>
+(function(){
+  var chips=[].slice.call(document.querySelectorAll('#chips .chip'));
+  var map={};chips.forEach(function(c){map[c.getAttribute('href').slice(1)]=c;});
+  var targets=Object.keys(map).map(function(id){return document.getElementById(id);}).filter(Boolean);
+  var current=null;
+  function setActive(id){
+    if(current===id)return;current=id;
+    chips.forEach(function(c){c.classList.toggle('active',c.getAttribute('href')==='#'+id);});
+    var c=map[id];if(c&&c.scrollIntoView){try{c.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});}catch(e){}}
+  }
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      var vis=entries.filter(function(e){return e.isIntersecting;}).sort(function(a,b){return a.boundingClientRect.top-b.boundingClientRect.top;});
+      if(vis.length)setActive(vis[0].target.id);
+    },{rootMargin:'-120px 0px -60% 0px',threshold:0});
+    targets.forEach(function(t){io.observe(t);});
+  }
+  var up=document.getElementById('up');
+  window.addEventListener('scroll',function(){up.classList.toggle('show',window.scrollY>900);},{passive:true});
+  up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+
+</body>
+</html>

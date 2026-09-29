@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vigie</title>
+<meta name="description" content="Révise l'UE2 Observation de la santé (M2 PPASP, EHESP) façon Duolingo : 11 unités, 29 leçons, 232 questions.">
+<meta property="og:title" content="Vigie">
+<meta property="og:description" content="Révise l'UE2 Observation de la santé (M2 PPASP, EHESP) façon Duolingo : 11 unités, 29 leçons, 232 questions.">
+<meta name="theme-color" content="#2B5FA8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='8.5' fill='none' stroke='%232B5FA8' stroke-width='3'/%3E%3Cpath d='M20.5 20.5l6 6' stroke='%232B5FA8' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<style>
+:root{
+  --bg:#F3F7F4;--surface:#FFFFFF;--surface-2:#E9EFEB;--ink:#14231C;--muted:#5E6E66;--line:#D7E0DA;--line-2:#C3CFC8;
+  --brand:#2B5FA8;--brand-dark:#1F457B;--brand-soft:#DDE8F7;
+  --ok:#2E9E5B;--ok-dark:#237A46;--ok-soft:#E1F5E8;--ok-ink:#1B6B3B;
+  --bad:#D9483B;--bad-dark:#A93329;--bad-soft:#FBE4E1;--bad-ink:#9E2E22;
+  --gold:#E3A72F;--gold-dark:#B8841E;--gold-soft:#FBF1DC;
+  --sel:#1C8ED8;--sel-soft:#DDEFFB;
+  --u1:#1E7A5C;--u1d:#155A44;--u2:#2B5FA8;--u2d:#1F457B;--u3:#B8513A;--u3d:#8A3B2A;--u4:#6E48A6;--u4d:#50337B;--u5:#B77A14;--u5d:#87590E;--u6:#2F7386;--u6d:#215462;--u7:#4E7A2B;--u7d:#38591E;--u8:#A23B72;--u8d:#78295A;--u9:#8C5A2B;--u9d:#664020;--u10:#3F51B5;--u10d:#2E3B85;--u11:#C2410C;--u11d:#8F300A;--u12:#9D2B2B;--u12d:#731F1F;--u13:#0E7490;--u13d:#0A566B;
+  --sans:"Nunito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1512;--surface:#171F1B;--surface-2:#202B26;--ink:#EEF3F0;--muted:#A3B3AA;--line:#2B3731;--line-2:#3A4841;
+    --brand:#6C9BE0;--brand-dark:#4A76B5;--brand-soft:#17263B;
+    --ok:#3DBA6E;--ok-dark:#2B8A50;--ok-soft:#173B2A;--ok-ink:#8FE0B0;
+    --bad:#E8604F;--bad-dark:#B2403A;--bad-soft:#3F211B;--bad-ink:#F5A79B;
+    --gold:#E7B44A;--gold-dark:#B98C2C;--gold-soft:#3A2E13;
+    --sel:#4FA8E8;--sel-soft:#173246;
+    --u1:#3FA57E;--u1d:#2B7A5C;--u2:#6C9BE0;--u2d:#4A76B5;--u3:#E08468;--u3d:#B5624B;--u4:#A98BD8;--u4d:#8367B0;--u5:#E0A83A;--u5d:#B7862A;--u6:#5FAEC4;--u6d:#3F8598;--u7:#8DBA5A;--u7d:#6A9140;--u8:#D77BA8;--u8d:#B35C88;--u9:#C99462;--u9d:#A37447;--u10:#8C9BE8;--u10d:#6B7AC4;--u11:#F08A4B;--u11d:#C96B32;--u12:#E07A7A;--u12d:#B85C5C;--u13:#4FB8D4;--u13d:#3494AE;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1512;--surface:#171F1B;--surface-2:#202B26;--ink:#EEF3F0;--muted:#A3B3AA;--line:#2B3731;--line-2:#3A4841;
+  --brand:#6C9BE0;--brand-dark:#4A76B5;--brand-soft:#17263B;
+  --ok:#3DBA6E;--ok-dark:#2B8A50;--ok-soft:#173B2A;--ok-ink:#8FE0B0;
+  --bad:#E8604F;--bad-dark:#B2403A;--bad-soft:#3F211B;--bad-ink:#F5A79B;
+  --gold:#E7B44A;--gold-dark:#B98C2C;--gold-soft:#3A2E13;
+  --sel:#4FA8E8;--sel-soft:#173246;
+  --u1:#3FA57E;--u1d:#2B7A5C;--u2:#6C9BE0;--u2d:#4A76B5;--u3:#E08468;--u3d:#B5624B;--u4:#A98BD8;--u4d:#8367B0;--u5:#E0A83A;--u5d:#B7862A;--u6:#5FAEC4;--u6d:#3F8598;--u7:#8DBA5A;--u7d:#6A9140;--u8:#D77BA8;--u8d:#B35C88;--u9:#C99462;--u9d:#A37447;--u10:#8C9BE8;--u10d:#6B7AC4;--u11:#F08A4B;--u11d:#C96B32;--u12:#E07A7A;--u12d:#B85C5C;--u13:#4FB8D4;--u13d:#3494AE;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font-family:inherit;font-size:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
+button:disabled{cursor:default}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#app{max-width:560px;margin:0 auto;min-height:100%;display:flex;flex-direction:column}
+.screen{display:flex;flex-direction:column;flex:1;min-height:100%}
+h1,h2,h3{margin:0;line-height:1.15;text-wrap:balance}
+
+/* 3D buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:900;font-size:15px;letter-spacing:.03em;text-transform:uppercase;padding:14px 20px;border-radius:14px;background:var(--brand);color:#fff;box-shadow:0 4px 0 var(--brand-dark);transition:transform .06s,box-shadow .06s;user-select:none;text-decoration:none}
+.btn:active:not(:disabled){transform:translateY(4px);box-shadow:0 0 0 var(--brand-dark)}
+.btn:disabled{background:var(--surface-2);color:var(--muted);box-shadow:0 4px 0 var(--line-2)}
+.btn.ok{background:var(--ok);box-shadow:0 4px 0 var(--ok-dark)}
+.btn.bad{background:var(--bad);box-shadow:0 4px 0 var(--bad-dark)}
+.btn.ghost{background:var(--surface);color:var(--brand);box-shadow:0 4px 0 var(--line-2);border:2px solid var(--line)}
+.btn.wide{width:100%}
+
+/* Home */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;font-size:20px;letter-spacing:-.01em}
+.logo svg{width:28px;height:28px}
+.stats{display:flex;gap:10px}
+.stat{display:flex;align-items:center;gap:5px;font-weight:900;font-size:15px;padding:5px 10px;border-radius:999px;background:var(--surface);border:1.5px solid var(--line)}
+.stat svg{width:18px;height:18px}
+.stat.fire{color:#E0632B}.stat.xp{color:var(--gold-dark)}
+.home{padding:16px 16px 110px;display:flex;flex-direction:column;gap:22px}
+.hero{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:16px}
+.hero h1{font-size:22px;font-weight:900;margin-bottom:4px}
+.hero p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.hero .row{display:flex;gap:10px;flex-wrap:wrap}
+.hero .row .btn{flex:1;min-width:150px;font-size:13px;padding:12px 14px}
+.prog{height:10px;border-radius:999px;background:var(--surface-2);overflow:hidden;margin:8px 0 4px}
+.prog i{display:block;height:100%;background:var(--brand);border-radius:999px;transition:width .4s}
+.prog-l{font-size:12.5px;color:var(--muted);font-weight:700}
+.unit{border-radius:18px;overflow:hidden;border:1.5px solid var(--line);background:var(--surface)}
+.unit-h{padding:14px 16px;color:#fff;background:var(--c);display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.unit-h .n{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;opacity:.9}
+.unit-h h2{font-size:18px;font-weight:900;margin-top:2px}
+.unit-h .who{font-size:12.5px;opacity:.9;margin-top:2px;font-weight:700}
+.unit-h .crown{flex:none;display:flex;align-items:center;gap:4px;font-weight:900;font-size:14px;background:rgba(0,0,0,.18);padding:5px 10px;border-radius:999px}
+.unit-h .crown svg{width:16px;height:16px}
+.path{padding:18px 16px 8px;display:flex;flex-direction:column;gap:10px}
+.node{display:flex;align-items:center;gap:14px;text-align:left;padding:8px;border-radius:14px;width:100%}
+.node:hover{background:var(--surface-2)}
+.node .disc{flex:none;width:58px;height:58px;border-radius:50%;background:var(--surface-2);border:3px solid var(--line-2);box-shadow:0 5px 0 var(--line-2);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:18px;color:var(--muted);transition:transform .06s,box-shadow .06s}
+.node:active .disc{transform:translateY(5px);box-shadow:0 0 0 var(--line-2)}
+.node.done .disc{background:var(--c);border-color:var(--c);box-shadow:0 5px 0 var(--cd);color:#fff}
+.node.gold .disc{background:var(--gold);border-color:var(--gold);box-shadow:0 5px 0 var(--gold-dark);color:#fff}
+.node.next .disc{background:var(--surface);border-color:var(--c);box-shadow:0 5px 0 var(--cd);color:var(--c)}
+.node .disc svg{width:26px;height:26px}
+.node .t{font-weight:900;font-size:15.5px}
+.node .s{font-size:12.5px;color:var(--muted);font-weight:700;margin-top:1px}
+.node.next .t{color:var(--c)}
+.node:nth-child(odd){padding-left:8px}
+.node:nth-child(even){padding-left:44px}
+.node:nth-child(3n){padding-left:80px}
+.foot-note{font-size:12.5px;color:var(--muted);text-align:center;font-weight:700;padding:0 8px}
+.foot-note a{color:var(--brand)}
+
+/* Lesson */
+.lesson{padding:0 16px calc(120px + env(safe-area-inset-bottom,0px));flex:1}
+.lbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);display:flex;align-items:center;gap:12px;padding:12px 0 10px}
+.lbar .x{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:22px;font-weight:900;flex:none}
+.lbar .x:hover{background:var(--surface-2)}
+.lbar .pb{flex:1;height:14px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+.lbar .pb i{display:block;height:100%;background:var(--ok);border-radius:999px;transition:width .35s;position:relative}
+.lbar .pb i::after{content:"";position:absolute;left:8px;right:8px;top:3px;height:4px;border-radius:999px;background:rgba(255,255,255,.35)}
+.lbar .cnt{font-weight:900;color:var(--muted);font-size:13px;flex:none;min-width:38px;text-align:right;font-variant-numeric:tabular-nums}
+.kind{font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--c,var(--brand));margin:10px 0 6px}
+.qtext{font-size:20px;font-weight:900;line-height:1.3;margin-bottom:18px}
+.qtext .gap{display:inline-block;min-width:110px;border-bottom:3px solid var(--line-2);padding:0 6px;text-align:center;color:var(--sel);vertical-align:bottom;line-height:1.2}
+.qtext .gap.filled{border-color:var(--sel)}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:13px 14px;border-radius:14px;border:2px solid var(--line);background:var(--surface);box-shadow:0 3px 0 var(--line);font-weight:700;font-size:15.5px;line-height:1.3;transition:transform .06s,box-shadow .06s}
+.opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 0 0 var(--line)}
+.opt .k{flex:none;width:28px;height:28px;border-radius:8px;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:var(--muted)}
+.opt.sel{border-color:var(--sel);background:var(--sel-soft);box-shadow:0 3px 0 var(--sel);color:var(--sel)}
+.opt.sel .k{border-color:var(--sel);color:var(--sel)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft);box-shadow:0 3px 0 var(--ok);color:var(--ok-ink)}
+.opt.right .k{border-color:var(--ok);color:var(--ok-ink)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft);box-shadow:0 3px 0 var(--bad);color:var(--bad-ink)}
+.opt.wrong .k{border-color:var(--bad);color:var(--bad-ink)}
+.opt:disabled{opacity:.92}
+.vf{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vf .opt{justify-content:center;font-size:17px;padding:20px 10px;font-weight:900}
+.bank{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.chipb{padding:10px 14px;border-radius:12px;border:2px solid var(--line);background:var(--surface);box-shadow:0 3px 0 var(--line);font-weight:800;font-size:15px;transition:transform .06s,box-shadow .06s}
+.chipb:active:not(:disabled){transform:translateY(3px);box-shadow:0 0 0 var(--line)}
+.chipb.used{opacity:.35}
+.chipb.right{border-color:var(--ok);background:var(--ok-soft);color:var(--ok-ink);box-shadow:0 3px 0 var(--ok)}
+.chipb.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad-ink);box-shadow:0 3px 0 var(--bad)}
+.assoc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.assoc .opt{min-height:64px;justify-content:center;text-align:center;font-size:14px;padding:10px}
+.assoc .opt.gone{opacity:.28;border-style:dashed;box-shadow:none;transform:none}
+.assoc .opt.shake{animation:shake .35s}
+@keyframes shake{20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+.slots{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.slot{display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 10px;border-radius:12px;border:2px dashed var(--line-2);background:var(--surface-2);font-weight:800;text-align:left;font-size:15px}
+.slot .i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--surface);border:2px solid var(--line-2);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:var(--muted)}
+.slot.full{border-style:solid;border-color:var(--sel);background:var(--sel-soft)}
+.slot.right{border-color:var(--ok);background:var(--ok-soft);color:var(--ok-ink)}
+.slot.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad-ink)}
+.explain{margin-top:16px;font-size:14.5px;color:var(--muted);font-weight:700}
+
+/* Footer feedback */
+.fb{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:2px solid var(--line);padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px))}
+.fb-in{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.fb.good{background:var(--ok-soft);border-color:var(--ok-soft)}
+.fb.badf{background:var(--bad-soft);border-color:var(--bad-soft)}
+.fb .msg{display:flex;gap:12px;align-items:flex-start}
+.fb .ic{flex:none;width:44px;height:44px;border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center}
+.fb .ic svg{width:26px;height:26px}
+.fb.good .msg{color:var(--ok-ink)}.fb.badf .msg{color:var(--bad-ink)}
+.fb .msg b{display:block;font-size:19px;font-weight:900;margin-bottom:2px}
+.fb .msg span{font-size:14.5px;font-weight:700;line-height:1.35}
+.fb .msg .ans{font-weight:900}
+
+/* Result */
+.result{padding:40px 20px calc(30px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;flex:1;justify-content:center}
+.result h1{font-size:28px;font-weight:900}
+.result p{margin:0;color:var(--muted);font-weight:700}
+.medal{width:120px;height:120px;border-radius:50%;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;border:4px solid var(--gold)}
+.medal svg{width:64px;height:64px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:400px}
+.tile{border-radius:14px;border:2px solid var(--c);overflow:hidden;background:var(--surface)}
+.tile .l{background:var(--c);color:#fff;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:5px}
+.tile .v{font-size:24px;font-weight:900;padding:10px 4px;color:var(--c);font-variant-numeric:tabular-nums}
+.result .acts{display:flex;flex-direction:column;gap:10px;width:100%;max-width:400px;margin-top:8px}
+.review-list{width:100%;max-width:400px;text-align:left;font-size:14px;color:var(--muted);font-weight:700}
+.review-list li{margin:4px 0}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:50;padding:16px}
+.modal .box{background:var(--surface);border-radius:18px;padding:20px 18px calc(18px + env(safe-area-inset-bottom,0px));width:100%;max-width:520px;display:flex;flex-direction:column;gap:12px}
+.modal h3{font-size:18px;font-weight:900}
+.modal p{margin:0;color:var(--muted);font-weight:700;font-size:14.5px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (min-width:600px){.home{padding-top:22px}.hero h1{font-size:24px}}
+</style>
+<div id="app" aria-live="polite"></div>
+<script>
+/* ---------- Données de cours ---------- */
+const FICHES_URL="./fiches.html";
+const UNITS=[
+{id:"u1",n:1,c:"--u1",title:"Observer, analyser, aider à la décision",who:"Mélanie Bertin · introduction de l'UE",lessons:[
+{id:"u1l1",title:"Les trois temps de l'observation",q:[
+{t:"ordre",q:"Remets dans l'ordre les trois fonctions du recueil et de l'analyse des données de santé.",items:["Observation : décrire la situation sanitaire","Analyse : évaluer l'importance des problèmes","Aide à la décision : orienter les interventions"],e:"Observation → analyse → aide à la décision : c'est le fil de toute l'UE."},
+{t:"qcm",q:"Quelles sont les deux compétences visées par l'UE2 ?",o:["Analyser les données sur l'état de santé et ses déterminants pour poser un diagnostic, et repérer les responsabilités des acteurs de prévention, de soin et du médico-social sur un territoire","Construire un essai randomisé et le publier","Coder les causes de décès en CIM-10 et gérer un registre","Programmer une base de données SNDS"],a:0,e:"Diagnostic territorial et repérage des responsabilités : les deux compétences de l'UE."},
+{t:"vf",q:"L'observation de la santé peut se faire à tous les niveaux du territoire, du pays jusqu'à l'IRIS.",a:true,e:"L'IRIS est le plus petit découpage infra-communal de l'Insee."},
+{t:"qcm",q:"L'observation de la santé repose sur quelle définition de la santé ?",o:["Celle de l'OMS","Celle du Code de la santé publique uniquement","L'absence de maladie diagnostiquée","La consommation de soins remboursés"],a:0,e:"Définition large de l'OMS, d'où les nombreuses disciplines mobilisées (épidémiologie, démographie, géographie, sociologie…)."},
+{t:"qcm",q:"Lequel de ces organismes N'EST PAS cité comme producteur de données de santé ?",o:["La Cour des comptes","L'Insee et l'Ined","Les ORS et la FNORS","La DREES et la DARES"],a:0,e:"Le cours cite SpF, ANSES, ANSM, INRS, IRDES, Insee, Ined, l'Assurance maladie, DREES, DARES, ORS, ARS, les établissements, les équipes de recherche, les enquêtes et les associations."},
+{t:"vf",q:"Observation quantitative et observation qualitative sont toutes deux utiles aux décideurs.",a:true,e:"États des lieux, veilles, diagnostics, évaluations : quantitatif et qualitatif se complètent."},
+{t:"qcm",q:"Pour analyser un problème de santé, le cours conseille d'abord…",o:["de connaître la population avant de s'intéresser à son état de santé","de calculer directement un odds ratio","de lancer une enquête de cohorte","de consulter l'avis des élus"],a:0,e:"Indicateurs démographiques et socio-économiques d'abord, puis indicateurs de santé, offre de soins, recours aux soins, environnement."},
+{t:"assoc",q:"Associe chaque temps à ce qu'il permet.",p:[["Observation","décrire la situation sanitaire d'une population"],["Analyse","préciser l'importance du problème étudié"],["Aide à la décision","orienter les interventions de santé publique"]],e:"Le recueil et l'analyse des données servent au final la décision."}]},
+{id:"u1l2",title:"Indicateurs et décision",q:[
+{t:"qcm",q:"Quelles qualités doit avoir un bon indicateur selon le cours ?",o:["Une définition claire et standardisée, être accessible et valide","Être le plus récent possible, quel qu'en soit la source","Être calculé à l'échelle de l'IRIS","Être produit par l'Insee"],a:0,e:"Définition claire et standardisée, accessible, valide."},
+{t:"qcm",q:"Laquelle N'EST PAS une difficulté des indicateurs citée en cours ?",o:["Leur trop grande simplicité de calcul","Leur disponibilité dans le temps et l'espace","Le problème des petits effectifs","Les changements de définition"],a:0,e:"Disponibilité, petits effectifs, changements de définition : les trois difficultés du cours."},
+{t:"vf",q:"L'observateur doit se substituer au décideur quand les données sont claires.",a:false,e:"Il ne se substitue pas au décideur : il lui fournit des éléments objectifs. D'autres éléments entrent en jeu (contexte, enjeux politiques, économiques, culturels)."},
+{t:"qcm",q:"Dans la fable de Jonathan Lomas, le chercheur répond « vous êtes dans un ballon à 50 m du sol ». Que lui reproche le décideur ?",o:["Une réponse parfaitement exacte mais complètement inutile","Une réponse fausse","Une réponse trop lente","Une réponse trop chère"],a:0,e:"Et le chercheur répond que le décideur ne sait ni où il est ni où il va, mais le lui reproche : la fable illustre le fossé entre science et décision."},
+{t:"qcm",q:"Selon le cours, l'aide à la décision vise à…",o:["asseoir les décisions sur des bases rationnelles et des critères plus objectifs qu'intuitifs, en intégrant le point de vue de tous les acteurs, usagers compris","remplacer le débat politique par des chiffres","ne produire que des données nationales","réserver l'information aux décideurs"],a:0,e:"Avec un effort de communication envers les décideurs, les professionnels, les usagers et la population."},
+{t:"trou",q:"Il existe une très (trop ?) grande ___ d'informations disponibles sur la santé, qui exige une interprétation de qualité.",o:["richesse","pauvreté","confidentialité","instabilité"],a:0,e:"Variété des indicateurs et des sources, chacun avec ses points forts et ses limites."},
+{t:"qcm",q:"Comment l'UE2 est-elle évaluée ?",o:["Travail de groupe 70 % (policy brief et annexe 60 %, poster 40 %) et lecture d'un document en épidémiologie / indicateurs 30 %","Un examen écrit unique de 3 heures","Un oral individuel","Un QCM en ligne"],a:0,e:"La lecture critique d'article avec questions est évaluée le vendredi 2 octobre (14 h - 15 h)."},
+{t:"vf",q:"Les indicateurs environnementaux font partie des indicateurs utiles pour analyser la santé d'un territoire.",a:true,e:"À côté des indicateurs démographiques, socio-économiques, de santé, d'offre et d'utilisation des soins."}]}
+]},
+{id:"u2",n:2,c:"--u2",title:"Sources des données de santé",who:"Mélanie Bertin · Observer et recueillir",lessons:[
+{id:"u2l1",title:"Recueillir des données",q:[
+{t:"qcm",q:"Quelles sont les deux notions importantes pour caractériser un recueil de données ?",o:["Exhaustif ou sur échantillon ; continu ou ponctuel","Public ou privé ; gratuit ou payant","Local ou national ; récent ou ancien","Qualitatif ou quantitatif ; papier ou numérique"],a:0,e:"Exemple : les MDO sont exhaustives et continues ; une enquête transversale est sur échantillon et ponctuelle."},
+{t:"assoc",q:"Associe chaque maillon de « la longue vie des données » à un exemple.",p:[["Producteurs","ARS, Insee, CPAM, instituts de recherche… et vous"],["Diffuseurs","Atlasanté, Scansanté, data.gouv"],["Utilisateurs","agents ARS, collectivités, associations, grand public"]],e:"Vous pouvez aussi être producteur de données."},
+{t:"qcm",q:"Lesquelles sont les cinq familles de données présentées ?",o:["Sanitaires, démographiques, socio-économiques, environnementales, offre et accès aux soins","Cliniques, biologiques, génétiques, radiologiques, pharmaceutiques","Nationales, régionales, départementales, communales, IRIS","Brutes, standardisées, ajustées, pondérées, lissées"],a:0,e:"Le cours détaille ensuite chaque famille."},
+{t:"qcm",q:"Le SNDS rassemble…",o:["des informations de santé pseudonymisées collectées par des organismes publics","des données nominatives accessibles à tous","uniquement les causes de décès","les résultats des enquêtes de l'Insee"],a:0,e:"Il réunit notamment le PMSI (hôpitaux) et le SNIIRAM (Assurance maladie)."},
+{t:"assoc",q:"Associe chaque sigle à sa signification.",p:[["PMSI","Programme de médicalisation des systèmes d'information (hôpitaux)"],["SNIIRAM","Système national d'information inter-régimes de l'Assurance maladie"],["CépiDc","Centre d'épidémiologie sur les causes médicales de décès"],["RNIPP","Répertoire national d'identification des personnes physiques"]],e:"L'ATIH gère le PMSI, la Cnam le SNIIRAM, l'Inserm le CépiDc, l'Insee le RNIPP."},
+{t:"qcm",q:"Quel acteur du SNDS est en charge du PMSI ?",o:["L'ATIH","La Cnam","Le CépiDc","L'Insee"],a:0,e:"La Cnam est responsable du traitement et en charge du SNIIRAM ; le CépiDc fournit les causes médicales de décès."},
+{t:"vf",q:"Les données d'état civil sur les décès sont transmises par les communes à l'Insee dès qu'un acte est dressé.",a:true,e:"L'Insee gère le RNIPP ; le CépiDc code les causes médicales de décès."},
+{t:"trou",q:"Le CépiDc recueille de façon exhaustive et permanente les causes médicales de décès depuis le 1er janvier ___.",o:["1968","1945","1990","2004"],a:0,e:"Codées aujourd'hui en CIM-10 ; 500 000 à 550 000 décès par an ; environ 18 mois de décalage."}]},
+{id:"u2l2",title:"Registres et études observationnelles",q:[
+{t:"qcm",q:"Quelle est la définition d'un registre ?",o:["Un recueil continu et exhaustif de données nominatives sur un ou plusieurs événements de santé dans une population géographiquement définie, par une équipe compétente","Une enquête ponctuelle sur échantillon représentatif","Une base de remboursements de l'Assurance maladie","Un fichier des professionnels de santé"],a:0,e:"À des fins de recherche et de santé publique ; label obligatoire de Santé publique France et de l'Inserm."},
+{t:"qcm",q:"Quel est l'avantage et la limite d'un registre ?",o:["Excellente qualité et exhaustivité des cas, mais seulement sur des territoires restreints","Couverture nationale, mais qualité médiocre","Faible coût, mais données non nominatives","Données en temps réel, mais sans diagnostic"],a:0,e:"Exemples : registre des cancers du sein de Loire-Atlantique, registre des AVC du Finistère."},
+{t:"qcm",q:"Sur quels trois types de pathologies portent principalement les registres ?",o:["Cancers, malformations congénitales, pathologies cardio-neuro-vasculaires","Grippe, Covid, dengue","Diabète, obésité, asthme","Accidents, suicides, addictions"],a:0,e:"Il existe 25 registres des cancers : 14 généraux et 11 spécialisés, le plus souvent départementaux."},
+{t:"vf",q:"Les registres permettent quand même des estimations nationales.",a:true,e:"Grâce à la très bonne qualité d'information sur les zones couvertes."},
+{t:"assoc",q:"Associe chaque cohorte française à sa description.",p:[["Constances","cohorte généraliste d'environ 200 000 adultes"],["Elfe","plus de 18 000 enfants nés en 2011"],["NutriNet-Santé","volontaires inscrits en ligne depuis 2009"],["Gazel","volontaires d'EDF et GDF inclus en 1989"]],e:"Autres exemples cités : E3N-E4N, Pélagie."},
+{t:"assoc",q:"Associe chaque enquête transversale à son producteur.",p:[["Enquête sur les risques professionnels (1994, 2003, 2010, 2017)","DARES"],["Enquête sur les consommations alimentaires (environ 5 000 personnes)","ANSES"],["Baromètres santé depuis 1992","Santé publique France"]],e:"Enquêtes périodiques, donc ponctuelles et sur échantillon."},
+{t:"qcm",q:"Quelle limite est typique de l'étude transversale ?",o:["La relation temporelle entre exposition et maladie est difficile à établir","Elle coûte plus cher qu'une cohorte","Elle exige des malades rares","Elle ne donne aucune prévalence"],a:0,e:"Exposition et état de santé sont mesurés au même temps t : l'exposition a-t-elle précédé la maladie ?"},
+{t:"vf",q:"Une étude cas-témoins est par définition rétrospective.",a:true,e:"On recrute après la survenue de la maladie, puis on retrace l'exposition."}]},
+{id:"u2l3",title:"Surveillance et autres sources",q:[
+{t:"qcm",q:"Combien y a-t-il de maladies à déclaration obligatoire (MDO) selon le cours ?",o:["34, dont 32 infectieuses et 2 non infectieuses","12, toutes infectieuses","50, dont 10 chroniques","8, toutes émergentes"],a:0,e:"Les deux non infectieuses : mésothéliomes et saturnisme chez l'enfant."},
+{t:"qcm",q:"Quelles sont les deux MDO non infectieuses ?",o:["Mésothéliome et saturnisme de l'enfant","Diabète et obésité","Cancer du poumon et BPCO","Suicide et accidents de la route"],a:0,e:"Le recueil des MDO est exhaustif (on veut tous les cas) et continu."},
+{t:"assoc",q:"Associe chaque dispositif de surveillance (grippe, Covid) à sa description.",p:[["Réseau Sentinelles","environ 1 300 médecins généralistes, remontée hebdomadaire"],["OSCOUR","93,3 % des passages aux urgences"],["SOS Médecins","60 associations"],["SI-DEP","tests PCR du Covid-19"]],e:"S'y ajoutent les enquêtes en population (Grippenet, COVIDnet), le CépiDc et Flunet."},
+{t:"qcm",q:"Que sont les CIRE ?",o:["Les cellules interrégionales d'épidémiologie de Santé publique France","Des centres de soins infirmiers","Des registres de cancers","Des services de l'Insee"],a:0,e:"À côté des CVAGS (cellules de veille, d'alerte et de gestion sanitaire des ARS) ; le CORRUSS est le centre opérationnel de la DGS."},
+{t:"qcm",q:"Lequel N'EST PAS cité parmi les sources du champ social ?",o:["Le CépiDc","La CNAF","La MSA","L'ONPES"],a:0,e:"Champ social : Insee, DREES, CNAF, DREETS, ONPES, CNSA, MSA, Oned, Ined."},
+{t:"vf",q:"Les certificats de santé et les bilans de santé scolaires sont d'autres sources de données de santé.",a:true,e:"Avec les maladies à caractère professionnel, les enquêtes d'expositions professionnelles, les objets connectés."},
+{t:"qcm",q:"Quel site permet de chercher les études épidémiologiques françaises ?",o:["epidemiologie-france.aviesan.fr","rezone.ameli.fr","cartosante.atlasante.fr","scansante.fr"],a:0,e:"Le portail Aviesan recense les études (cohortes, transversales…)."},
+{t:"assoc",q:"Associe chaque source à son type.",p:[["SNDS","base médico-administrative"],["Registre des cancers","recueil continu et exhaustif sur un territoire"],["Constances","cohorte"],["Réseau Sentinelles","surveillance"]],e:"Les grandes familles de sources : SNDS, registres, enquêtes et études, surveillance, objets connectés."}]}
+]},
+{id:"u3",n:3,c:"--u3",title:"Trouver les données : les observatoires",who:"Mélanie Bertin · Observer et recueillir",lessons:[
+{id:"u3l1",title:"Données sanitaires en ligne",q:[
+{t:"qcm",q:"Quels indicateurs donne Data pathologies (Assurance maladie) ?",o:["Effectif et prévalence (%) par année, par groupe de pathologies","Taux de mortalité standardisés","Temps d'accès aux spécialistes","Densité de professionnels"],a:0,e:"Par sexe et classe d'âge, par département et région, de 2015 à 2024 ; source : SNDS (DCIR, PMSI, ALD)."},
+{t:"trou",q:"Data pathologies utilise le SNDS : remboursements (DCIR), séjours hospitaliers (PMSI) et prises en charge pour ___.",o:["affection de longue durée (ALD)","maladie à déclaration obligatoire","accident du travail","invalidité"],a:0,e:"Trois composantes du SNDS pour repérer les pathologies."},
+{t:"assoc",q:"Associe chaque observatoire à son producteur.",p:[["Data pathologies","Assurance maladie (CPAM)"],["Odissé","Santé publique France"],["Score santé","ORS / FNORS"],["Sirsé","ARS (Atlasanté)"]],e:"Question typique : savoir où aller chercher une donnée."},
+{t:"qcm",q:"Où chercher le taux d'incidence hospitalière des AVC ischémiques par département, sexe et âge ?",o:["Odissé (Santé publique France)","Rézone","Cartosanté","Insee"],a:0,e:"C'était l'exercice « À vous de jouer » en Ille-et-Vilaine, 2023."},
+{t:"qcm",q:"Score santé (ORS / FNORS) propose surtout…",o:["des admissions en ALD, la mortalité et l'espérance de vie, plus des déterminants, l'environnement et l'offre de soins","uniquement la densité de médecins","uniquement des données d'enquêtes qualitatives","les tests PCR"],a:0,e:"Observatoire multithématique ; périodes très hétérogènes selon les données."},
+{t:"qcm",q:"Quelle est la caractéristique du recueil du CépiDc ?",o:["Continu depuis 1968 et exhaustif, avec environ 18 mois de décalage","Ponctuel, tous les 5 ans","Sur échantillon de 5 000 décès","En temps réel"],a:0,e:"Indicateurs : nombre de décès, taux bruts et standardisés, toutes causes et par cause."},
+{t:"vf",q:"Sur Data pathologies, on peut chercher la prévalence d'un cancer par classe d'âge dans un département.",a:true,e:"Exemple du cours : prévalence du cancer de la prostate chez les hommes de 60-64 ans dans le Cantal en 2020."},
+{t:"qcm",q:"Pour le taux de mortalité brut des femmes en Guyane en 2004, on interroge…",o:["le CépiDc (Inserm)","Data professionnels","Rézone CPTS","Scansanté"],a:0,e:"Recherche possible par sexe, année ou période, zone géographique et cause de décès."}]},
+{id:"u3l2",title:"Offre de soins",q:[
+{t:"qcm",q:"Lequel est un indicateur d'offre de soins ?",o:["La densité de gynécologues pour 100 000 habitants","La prévalence du diabète","Le taux de mortalité prématurée","La part de fumeurs"],a:0,e:"Aussi : nombre de patients par praticien, accès aux urgences, taux d'occupation en ambulatoire, dépassements d'honoraires."},
+{t:"qcm",q:"Quelles sources alimentent les données d'offre de soins ?",o:["SAE, PMSI, RIAP, RPPS, SNDS, FINESS","Baromètres santé et INCA","Registres des cancers","CépiDc et RNIPP"],a:0,e:"FINESS : fichier des établissements ; RPPS : répertoire des professionnels."},
+{t:"assoc",q:"Associe chaque outil à son usage.",p:[["Cartosanté","données sur 6 professions de santé, 17 ans d'historique"],["Data professionnels","démographie et activité libérale d'une trentaine de professions"],["Rézone","aider les médecins à choisir leur lieu d'installation"],["Scansanté","activité et performance des établissements"]],e:"Rézone CPTS aide aussi les porteurs de projets de CPTS à faire leur diagnostic territorial."},
+{t:"qcm",q:"Quelles six professions couvre Cartosanté ?",o:["Infirmiers, kinésithérapeutes, orthophonistes, chirurgiens-dentistes, médecins généralistes, sages-femmes","Cardiologues, pédiatres, psychiatres, radiologues, urologues, ORL","Pharmaciens, biologistes, aides-soignants, ambulanciers, opticiens, podologues","Uniquement des spécialistes libéraux"],a:0,e:"Indicateurs sur l'offre, le recours, l'activité et l'accessibilité."},
+{t:"vf",q:"Sirsé est produit et diffusé par et pour les ARS.",a:true,e:"Sur Atlasanté : équipements, lits, urgences, SAMU, imagerie, SSR, HAD, soins palliatifs…"},
+{t:"qcm",q:"À quoi servent ces données d'offre de soins ?",o:["Identifier les déserts médicaux, vérifier la couverture du territoire, comparer les établissements","Calculer des odds ratios","Mesurer l'exposition aux écrans","Coder les causes de décès"],a:0,e:"Les trois objectifs donnés en cours."},
+{t:"qcm",q:"Quel outil propose les indicateurs de performance HospiDiag ?",o:["Scansanté","Cartosanté","Odissé","Géoportail"],a:0,e:"Scansanté : activité, territoires et parcours (flux entre établissements), coûts et finances."},
+{t:"trou",q:"Data professionnels donne pour les professions libérales l'effectif et la ___.",o:["densité","prévalence","létalité","incidence"],a:0,e:"Par département et région, de 2010 à 2024."}]},
+{id:"u3l3",title:"Social, environnement, qualitatif",q:[
+{t:"qcm",q:"Combien de services statistiques ministériels (SSM) travaillent avec l'Insee ?",o:["16","3","40","100"],a:0,e:"Dont la DREES (santé, social) et la DARES (travail)."},
+{t:"qcm",q:"Lequel N'EST PAS une échelle géographique proposée par l'Insee ?",o:["Le bassin de patientèle","La commune","L'intercommunalité-métropole","La zone d'emploi 2020"],a:0,e:"Aussi : national, région, département, arrondissement, aire d'attraction des villes, unité urbaine."},
+{t:"qcm",q:"Quelle directive européenne encadre l'inventaire des bases de données environnementales ?",o:["INSPIRE (2007/2/CE)","RGPD","REACH","Directive-cadre sur l'eau"],a:0,e:"Mission confiée à l'Ineris, l'Anses et Santé publique France pour guider le PNSE 4."},
+{t:"qcm",q:"Que mesure le NDVI ?",o:["La couverture végétale (espaces verts)","La pollution de l'air","La qualité de l'eau","Le radon"],a:0,e:"Indice de végétation par différence normalisée."},
+{t:"vf",q:"Pour les données qualitatives (santé perçue, comportements), il existe un système de surveillance continu et exhaustif.",a:false,e:"Seulement des enquêtes ponctuelles, ce qui limite les données à un échelon géographique fin."},
+{t:"qcm",q:"À quoi sert le recueil qualitatif selon le cours ?",o:["Interpréter les données quantitatives, repérer les besoins des populations, recenser les ressources, mobiliser et impliquer","Remplacer les indicateurs quantitatifs","Calculer des taux standardisés","Obtenir une exhaustivité des cas"],a:0,e:"En complément des indicateurs quantitatifs : entretiens et observation de terrain."},
+{t:"assoc",q:"Associe chaque outil qualitatif à son instrument.",p:[["Entretien","guide d'entretien et enregistrement"],["Observation de terrain","grille d'observation et photos"]],e:"Les entretiens peuvent être individuels ou de groupe, directifs ou non."},
+{t:"qcm",q:"Conclusion du cours : au niveau régional, qui solliciter pour des données ?",o:["Les ORS et les ARS","Uniquement l'OMS","Uniquement l'Insee","Les mutuelles"],a:0,e:"Et à l'étranger : OMS, OCDE, FAO, CDC, EFSA, Banque mondiale."}]}
+]},
+{id:"u4",n:4,c:"--u4",title:"Épidémiologie : les indicateurs",who:"Mélanie Bertin · Fondamentaux de l'épidémiologie",lessons:[
+{id:"u4l1",title:"Définitions et branches",q:[
+{t:"qcm",q:"Selon Last, l'épidémiologie étudie…",o:["la distribution des événements de santé (dans le temps et l'espace) et leurs déterminants dans les populations humaines","le fonctionnement des organes","les traitements individuels","uniquement les épidémies infectieuses"],a:0,e:"Étude scientifique, distribution (fréquence, profils), déterminants (causes, facteurs de risque), population."},
+{t:"assoc",q:"Règle des 5W : associe chaque question à son objet.",p:[["What","le diagnostic ou l'événement de santé"],["Who","la personne"],["Where","le lieu"],["When","la date ou l'heure"],["Why / How","les causes, facteurs de risque et modes de transmission"]],e:"Sinon l'exploration est incomplète, comme pour un bon journaliste."},
+{t:"assoc",q:"Associe chaque branche de l'épidémiologie à ses mesures.",p:[["Descriptive","prévalence et incidence"],["Analytique (étiologique)","mesures d'association"],["Évaluative","mesures d'impact et d'efficacité"]],e:"La surveillance épidémiologique relève de l'épidémiologie descriptive."},
+{t:"qcm",q:"L'épidémiologie descriptive décrit les variations de l'état de santé…",o:["dans le temps, l'espace ou entre groupes sociaux","uniquement entre exposés et non-exposés","uniquement après une intervention","chez un seul patient"],a:0,e:"À partir de données exhaustives (recensement) ou d'échantillons représentatifs."},
+{t:"qcm",q:"Qu'est-ce qu'un échantillon ?",o:["Un sous-groupe extrait d'une population, si possible représentatif pour extrapoler les résultats","Toute la population","Un groupe de malades uniquement","Un registre"],a:0,e:"La représentativité permet d'extrapoler."},
+{t:"ordre",q:"Remets dans l'ordre les étapes de l'épidémiologie comme outil de résolution de problèmes.",items:["Surveillance : récolter les données","Générer les résultats","Conduire des études pour tester les hypothèses","Intervention (action)"],e:"Recueillir, analyser, tester, agir."},
+{t:"vf",q:"L'épidémiologie sert aussi à évaluer l'efficacité des programmes et services de santé.",a:true,e:"C'est l'épidémiologie évaluative."},
+{t:"qcm",q:"Lequel est un indicateur de mortalité (et non de morbidité) ?",o:["La létalité","La prévalence","L'incidence","Le taux d'incidence"],a:0,e:"Morbidité : prévalence, incidence. Mortalité : taux de mortalité, létalité."}]},
+{id:"u4l2",title:"Prévalence et incidence",q:[
+{t:"qcm",q:"La prévalence est…",o:["la proportion de personnes atteintes dans une population donnée à un moment donné","le nombre de nouveaux cas sur une période","la proportion de malades qui décèdent","le nombre de décès pour 100 000"],a:0,e:"Cas existants (anciens et nouveaux) à l'instant t divisés par la population à ce même instant, souvent en %."},
+{t:"qcm",q:"L'incidence est…",o:["le nombre de nouveaux cas apparus dans une population pendant une période donnée","la proportion de malades à un instant t","le rapport des cotes","la proportion de décès parmi les cas"],a:0,e:"En nombre absolu, en incidence cumulée (%) ou en taux d'incidence (nouveaux cas par unité de temps)."},
+{t:"qcm",q:"Sur 8 sujets, 2 sont déjà malades au début de la période et 3 tombent malades pendant. Quelle est l'incidence sur la période ?",o:["3 / 6","5 / 8","3 / 8","2 / 8"],a:0,e:"Nouveaux cas (3) rapportés aux sujets sains au début de la période (6)."},
+{t:"qcm",q:"Même exemple : quelle est la prévalence sur la période ?",o:["5 / 8","3 / 6","3 / 8","2 / 6"],a:0,e:"Anciens et nouveaux cas (5) sur l'ensemble de l'échantillon (8)."},
+{t:"vf",q:"« En 2020, la prévalence du diabète était de 11,4 % en Guadeloupe contre 3,74 % en Ille-et-Vilaine » : c'est un indicateur de morbidité.",a:true,e:"Source : Data pathologies. Prévalence = morbidité."},
+{t:"qcm",q:"« La prévalence d'adultes obèses était de 16,8 % [14,2-20,0] chez les hommes et 17,4 % [14,8-20,4] chez les femmes. » Que peut-on dire ?",o:["Pas de différence démontrée : les intervalles de confiance se chevauchent largement","Les femmes sont significativement plus obèses","Les hommes sont significativement plus obèses","On ne peut rien dire d'une prévalence"],a:0,e:"Le cours conclut : prévalence identique chez les hommes et les femmes en 2015, stable depuis 2006."},
+{t:"trou",q:"Le suivi d'une épidémie en cours (dengue, Covid-19) utilise surtout le taux d'___.",o:["incidence","létalité","prévalence","mortalité standardisée"],a:0,e:"Nouveaux cas par unité de temps : il suit la dynamique de l'épidémie."},
+{t:"vf",q:"Une maladie chronique longue et peu mortelle peut avoir une prévalence élevée avec une incidence faible.",a:true,e:"La prévalence dépend de l'incidence et de la durée de la maladie (précision logique, non chiffrée en cours)."}]},
+{id:"u4l3",title:"Mortalité et létalité",q:[
+{t:"qcm",q:"Le taux brut de mortalité rapporte…",o:["les décès dans une population sur une période à l'effectif moyen de cette population","les décès aux cas de la maladie","les nouveaux cas à la population","les décès avant 65 ans aux décès totaux"],a:0,e:"Exprimé pour 1 000, 10 000 ou 100 000 habitants, en général sur une année."},
+{t:"qcm",q:"Pourquoi calcule-t-on un taux de mortalité standardisé (ajusté) ?",o:["Pour neutraliser les différences de structure d'âge entre les populations comparées","Pour avoir un chiffre plus élevé","Pour exclure les décès accidentels","Parce que le taux brut est interdit"],a:0,e:"Une population plus âgée meurt plus : sans standardisation, on compare des structures d'âge, pas des risques."},
+{t:"qcm",q:"Territoire de Rennes, recours à la chirurgie 2018 : taux brut 75,5, taux standardisé 81,1 pour 1 000. Qu'en déduire ?",o:["Sa population est plus jeune que la population de référence : à structure d'âge égale, son recours serait plus élevé","Sa population est plus âgée","Les données sont fausses","Le taux standardisé est toujours supérieur"],a:0,e:"Le recours à la chirurgie augmente avec l'âge : un brut plus bas que le standardisé signale une population jeune. À l'inverse, Saint-Malo (brut 94,8, standardisé 85,5) a une population plus âgée."},
+{t:"qcm",q:"La létalité est…",o:["la proportion des cas d'une maladie qui en décèdent sur une période","le nombre de décès pour 100 000 habitants","la proportion de décès avant 65 ans","le nombre de décès toutes causes"],a:0,e:"Nombre de décès liés à la maladie / nombre de cas de la maladie × 100."},
+{t:"qcm",q:"Début juin 2020 : 28 940 décès pour 151 325 cas confirmés. Quelle létalité apparente ?",o:["Environ 19 %","Environ 0,7 %","Environ 4,3 %","Environ 43 %"],a:0,e:"28 940 / 151 325 ≈ 19 %. La létalité réelle estimée par l'Institut Pasteur était d'environ 0,7 %."},
+{t:"qcm",q:"Pourquoi la létalité apparente est-elle un mauvais indicateur pendant une pandémie ?",o:["Son dénominateur ne compte que les cas détectés, selon la définition de cas, les critères et la capacité de test","Son numérateur oublie les décès","Elle ne se calcule qu'après l'épidémie","Elle ignore l'âge"],a:0,e:"Les cas peu ou pas symptomatiques non diagnostiqués manquent au dénominateur : la létalité est surestimée."},
+{t:"vf",q:"Létalité et taux de mortalité ont le même dénominateur.",a:false,e:"Létalité : les cas de la maladie. Mortalité : toute la population. En juin 2020 : 19 % de létalité apparente mais 432 décès par million d'habitants."},
+{t:"assoc",q:"Associe chaque indicateur à son dénominateur.",p:[["Prévalence","population à l'instant t"],["Incidence cumulée","sujets sains au début de la période"],["Taux de mortalité","population moyenne de la période"],["Létalité","cas de la maladie"]],e:"Le dénominateur fait l'indicateur."}]}
+]},
+{id:"u5",n:5,c:"--u5",title:"Les types d'études",who:"Mélanie Bertin · Fondamentaux de l'épidémiologie",lessons:[
+{id:"u5l1",title:"Classer les études",q:[
+{t:"qcm",q:"Quelle est la grande distinction entre études épidémiologiques ?",o:["Observationnelles (descriptives ou étiologiques) et expérimentales (essais, interventions)","Qualitatives et quantitatives","Nationales et locales","Publiques et privées"],a:0,e:"Expérimentales : randomisées ou non (essais thérapeutiques, études d'intervention)."},
+{t:"assoc",q:"Associe chaque type d'étude à son principe de sélection.",p:[["Cohorte","sujets indemnes, suivis selon leur exposition"],["Cas-témoins","sujets choisis selon la maladie"],["Transversale","ni sur l'exposition ni sur la maladie, mesure à un temps t"],["Écologique","données agrégées de groupes"]],e:"Question clé de lecture critique : sur quoi a-t-on sélectionné les sujets ?"},
+{t:"qcm",q:"Une cohorte suit dans le temps des personnes…",o:["indemnes de l'événement de santé au moment du recrutement","déjà malades","choisies selon leur maladie","décédées"],a:0,e:"On compare l'incidence chez les exposés et les non-exposés."},
+{t:"qcm",q:"Dans une cohorte rétrospective…",o:["au moment de l'inclusion, on connaît déjà le statut vis-à-vis de l'événement, et on reconstitue l'exposition passée","on suit les sujets dans le futur","on recrute selon la maladie","on ne mesure pas l'exposition"],a:0,e:"Cohorte prospective : exposition connue au départ, suivi dans le futur jusqu'à l'événement."},
+{t:"qcm",q:"Dans une étude cas-témoins, les témoins doivent…",o:["venir de la même population que les cas, sans être choisis selon leur exposition","être exposés","être malades","être tirés d'un autre pays"],a:0,e:"On peut prendre N témoins par cas, et apparier sur un ou deux facteurs très liés à la maladie."},
+{t:"qcm",q:"Quand préfère-t-on une étude cas-témoins ?",o:["Quand la maladie est rare ou que son délai d'apparition est très long","Quand l'exposition est rare","Quand on veut calculer un risque relatif","Quand on veut étudier plusieurs maladies"],a:0,e:"Maladies orphelines, cancers : on part des cas."},
+{t:"vf",q:"L'étude transversale exclut les sujets absents ou partis avant l'enquête, ce qui peut créer un biais de sélection.",a:true,e:"Deuxième limite après la difficulté de temporalité."},
+{t:"qcm",q:"Cancer colorectal : 500 patients nouvellement diagnostiqués et 500 personnes sans cancer appariées sur l'âge, le sexe et la région. De quelle étude s'agit-il ?",o:["Cas-témoins appariée","Cohorte prospective","Transversale","Écologique"],a:0,e:"Exemple du cours sur la charcuterie."}]},
+{id:"u5l2",title:"Étude écologique et synthèse",q:[
+{t:"qcm",q:"Une étude écologique…",o:["compare des données agrégées (pays, régions, villes) plutôt que des individus","suit des individus dans le temps","compare des malades et des non-malades","tire au sort une intervention"],a:0,e:"Aussi appelée étude de corrélation."},
+{t:"qcm",q:"Quel est le risque principal de l'étude écologique ?",o:["Tirer des conclusions sur les individus à partir de données collectives (biais écologique)","Son coût très élevé","La perte de vue des sujets","Le biais de mémoire"],a:0,e:"Pas d'information individuelle ; la confusion joue au niveau des groupes."},
+{t:"qcm",q:"Lequel est un avantage de l'étude écologique ?",o:["Peu coûteuse, simple, et peut intégrer des données non individuelles (législation, ensoleillement)","Elle prouve la causalité","Elle mesure l'exposition de chacun","Elle évite toute confusion"],a:0,e:"Exemple du cours : espaces verts et maladies cardiovasculaires à Jingzhou (Chine)."},
+{t:"qcm",q:"Selon le tableau de synthèse, pour une EXPOSITION rare on préfère…",o:["la cohorte","l'étude cas-témoins","l'étude écologique","l'enquête qualitative"],a:0,e:"On peut recruter exprès des exposés. Pour une MALADIE rare : cas-témoins."},
+{t:"assoc",q:"Cas-témoins ou cohorte ? Associe chaque critère au type d'étude avantagé.",p:[["Maladie rare","cas-témoins"],["Exposition rare","cohorte"],["Plusieurs expositions","cas-témoins"],["Plusieurs maladies, histoire naturelle","cohorte"]],e:"Tableau de synthèse de J. Roux."},
+{t:"vf",q:"Une cohorte permet de mesurer le taux de maladie, pas une étude cas-témoins.",a:true,e:"En cas-témoins, la proportion de malades est fixée par l'investigateur."},
+{t:"qcm",q:"Quel problème est potentiel dans une cohorte mais pas dans une étude cas-témoins ?",o:["Les perdus de vue","Le biais de mémorisation","La maladie rare","Le petit échantillon"],a:0,e:"Inversement, le biais de mémorisation et le biais de sélection sont plus problématiques en cas-témoins."},
+{t:"assoc",q:"Coûts, taille, durée : associe.",p:[["Cas-témoins","petit échantillon, coûts moindres, étude courte"],["Cohorte","grand échantillon, coûts élevés, étude longue"]],e:"D'où le choix fréquent du cas-témoins pour une maladie rare."}]},
+{id:"u5l3",title:"Reconnaître le design",q:[
+{t:"qcm",q:"Un Baromètre santé interroge un échantillon de la population une année donnée sur ses comportements et sa santé. Type d'étude ?",o:["Transversale","Cohorte","Cas-témoins","Essai randomisé"],a:0,e:"Exposition et état de santé mesurés au même moment."},
+{t:"qcm",q:"Elfe suit 18 000 enfants nés en 2011 depuis la naissance jusqu'à l'âge adulte. Type d'étude ?",o:["Cohorte prospective","Transversale","Cas-témoins","Écologique"],a:0,e:"Suivi prévu jusqu'à 20 ans, avec biobanque."},
+{t:"qcm",q:"On compare le taux de mortalité cardiovasculaire de 50 villes selon leur surface d'espaces verts. Type d'étude ?",o:["Écologique","Cohorte","Cas-témoins","Transversale individuelle"],a:0,e:"Unité d'analyse : la ville, pas l'individu."},
+{t:"qcm",q:"Covid au sud de Londres : patients hospitalisés en urgence comparés à des résidents de même âge et sexe, selon l'origine ethnique. Type ?",o:["Cas-témoins","Cohorte","Écologique","Transversale"],a:0,e:"Sélection sur la maladie (hospitalisation sévère)."},
+{t:"vf",q:"Une étude qui montre une association forte et sans biais prouve à elle seule que le facteur est une cause.",a:false,e:"Le facteur est alors un facteur de risque, sans que la nature causale soit démontrée."},
+{t:"qcm",q:"Qu'est-ce qu'un facteur de risque ?",o:["Une caractéristique de l'individu ou de son environnement qui augmente la probabilité de développer un événement de santé","Une cause certaine de maladie","Un facteur de confusion","Un indicateur de mortalité"],a:0,e:"Âge, sexe, génétique, comportements, comorbidités, nuisances environnementales…"},
+{t:"qcm",q:"Écrans et troubles du langage : les auteurs ont recruté des enfants suivis par un orthophoniste et des enfants sans trouble suivis par un généraliste. Type ?",o:["Cas-témoins","Cohorte","Transversale","Écologique"],a:0,e:"C'est l'article de la lecture critique."},
+{t:"trou",q:"Gazel suit 20 000 volontaires d'EDF-GDF depuis 1989 ; seuls 107 étaient ___ en 2008.",o:["perdus de vue","décédés","malades","exposés"],a:0,e:"Très peu de perdus de vue : une force pour une cohorte."}]}
+]},
+{id:"u6",n:6,c:"--u6",title:"Mesures d'association",who:"Mélanie Bertin · Fondamentaux de l'épidémiologie",lessons:[
+{id:"u6l1",title:"Le risque relatif",q:[
+{t:"qcm",q:"Le risque relatif (RR) est…",o:["le rapport de l'incidence chez les exposés (R1) à l'incidence chez les non-exposés (R0)","la différence R1 - R0","le rapport des cotes d'exposition","la proportion de cas attribuables"],a:0,e:"Tableau a, b, c, d : R1 = a/(a+b), R0 = c/(c+d), RR = R1/R0."},
+{t:"qcm",q:"Que signifie un RR de 3 ?",o:["La probabilité de la maladie est 3 fois plus élevée chez les exposés","3 % des exposés sont malades","3 cas de plus pour 100 exposés","L'exposition protège"],a:0,e:"RR = 1 : pas d'association ; RR > 1 : association positive ; RR < 1 : facteur protecteur."},
+{t:"assoc",q:"Associe chaque valeur à son interprétation.",p:[["RR = 1","pas d'association"],["RR > 1","le risque augmente avec l'exposition"],["RR < 1","facteur protecteur"]],e:"Même lecture pour l'OR."},
+{t:"qcm",q:"Fumeurs : 20 cancers sur 100 ; non-fumeurs : 10 cancers sur 100. RR ?",o:["2","2,25","0,5","10"],a:0,e:"R1 = 20 %, R0 = 10 %, RR = 2."},
+{t:"qcm",q:"Exposés : 5 malades et 8 non malades. Non-exposés : 2 malades et 23 non malades. RR ?",o:["Environ 4,8","Environ 7,2","2,5","0,2"],a:0,e:"R1 = 5/13 ≈ 0,385 ; R0 = 2/25 = 0,08 ; RR ≈ 4,8."},
+{t:"vf",q:"On peut estimer le risque relatif dans une étude cas-témoins.",a:false,e:"L'échantillon comprend par choix de l'investigateur une part de malades (souvent 50 %) : il ne reflète pas le risque de maladie."},
+{t:"qcm",q:"Dans quel type d'étude calcule-t-on naturellement un RR ?",o:["Une cohorte","Une étude cas-témoins","Une étude écologique","Un entretien qualitatif"],a:0,e:"La cohorte mesure l'incidence chez les exposés et les non-exposés."},
+{t:"trou",q:"L'excès de risque se calcule par R = ___ ; s'il vaut 0, pas d'association.",o:["R1 - R0","R1 / R0","(RR - 1) / RR","a × d / b × c"],a:0,e:"Mesure absolue, quand le RR est relatif."}]},
+{id:"u6l2",title:"L'odds ratio",q:[
+{t:"qcm",q:"Comment se calcule l'odds ratio (OR) à partir du tableau a, b, c, d ?",o:["(a × d) / (b × c)","(a / (a+b)) / (c / (c+d))","a - c","(a + d) / (b + c)"],a:0,e:"Rapport de la cote d'exposition chez les malades à celle chez les non-malades."},
+{t:"qcm",q:"Fumeurs : 20 cancers / 80 sans ; non-fumeurs : 10 / 90. OR ?",o:["2,25","2","1,8","0,44"],a:0,e:"(20 × 90) / (80 × 10) = 1 800 / 800 = 2,25."},
+{t:"qcm",q:"Exposés : 5 malades et 8 non malades. Non-exposés : 2 malades et 23 non malades. OR ?",o:["Environ 7,2","Environ 4,8","2,5","0,14"],a:0,e:"(5 × 23) / (8 × 2) = 115 / 16 ≈ 7,2. Ici la maladie n'est pas rare, donc OR et RR s'écartent."},
+{t:"qcm",q:"Quand l'OR est-il une bonne approximation du RR ?",o:["Quand la maladie est rare (moins de 5 %)","Quand l'exposition est rare","Quand l'échantillon est petit","Jamais"],a:0,e:"R1 et R0 petits : le facteur (1-R0)/(1-R1) est proche de 1."},
+{t:"vf",q:"L'OR ne dépend pas de la proportion de malades dans l'échantillon, d'où son usage en cas-témoins.",a:true,e:"Il dépend de la fréquence d'exposition chez les malades et les non-malades."},
+{t:"qcm",q:"Comment formuler correctement un OR de 3,4 dans une étude cas-témoins ?",o:["Les odds (la cote) de présenter le trouble sont 3,4 fois plus élevées chez les exposés","Les exposés ont 3,4 fois plus de risque","3,4 % des exposés sont malades","Le risque augmente de 34 %"],a:0,e:"Le corrigé de la lecture critique reproche au résumé d'avoir interprété l'OR comme un RR."},
+{t:"qcm",q:"Que signifie un OR ajusté (ORa) ?",o:["L'association entre exposition et maladie en tenant compte simultanément des autres facteurs du modèle","Un OR corrigé à la main","Un OR arrondi","Un OR calculé sur les seuls cas"],a:0,e:"On neutralise les facteurs de confusion introduits dans le modèle multivarié."},
+{t:"vf",q:"Un OR peut changer fortement une fois ajusté sur les facteurs de confusion.",a:true,e:"Accès à la télévision : OR = 2,74 [0,96-7,77], puis ORa = 0,75 [0,21-2,66]. Les deux IC contiennent 1 (de justesse pour l'OR brut) : pas d'association mise en évidence."}]},
+{id:"u6l3",title:"Signification et fractions attribuables",q:[
+{t:"qcm",q:"Quand l'association est-elle statistiquement significative ?",o:["Quand l'intervalle de confiance à 95 % ne contient pas 1","Quand l'OR dépasse 2","Quand l'IC contient 1","Quand l'IC est large"],a:0,e:"Si l'IC contient 1 : pas d'association démontrée."},
+{t:"qcm",q:"Amiante et mésothéliome : RR = 3,5 [IC 95 % = 1,8-7,0]. Interprétation ?",o:["Association significative : le risque est multiplié par 3,5, entre 1,8 et 7 avec 95 % de confiance","Pas d'association","Facteur protecteur","Résultat impossible"],a:0,e:"L'IC ne contient pas 1."},
+{t:"assoc",q:"Significatif ou pas ? Associe.",p:[["OR = 2,82 [1,63-4,87]","significatif"],["OR = 2,74 [0,96-7,77]","non significatif"],["ORa = 0,6 [0,4-0,8]","significatif, association négative"],["ORa = 0,9 [0,7-1,1]","non significatif"]],e:"On regarde si 1 est dans l'intervalle."},
+{t:"qcm",q:"Que mesure la fraction de risque attribuable (FRA) ?",o:["La proportion de cas attribuables au facteur parmi tous les cas de la population","La proportion d'exposés","Le risque des exposés","La proportion de décès"],a:0,e:"FRA = pe(RR - 1) / [1 + pe(RR - 1)], pe = fréquence de l'exposition dans la population."},
+{t:"qcm",q:"Avec pe = 0,3 et RR = 2, que vaut la FRA ?",o:["Environ 23 %","50 %","30 %","60 %"],a:0,e:"0,3 × 1 / (1 + 0,3) = 0,3 / 1,3 ≈ 0,23."},
+{t:"qcm",q:"La fraction étiologique du risque chez les exposés (FER) vaut…",o:["(RR - 1) / RR","RR - 1","pe × RR","1 / RR"],a:0,e:"Proportion de cas attribuables au facteur parmi les exposés malades."},
+{t:"qcm",q:"RR = 2 : quelle FER ?",o:["50 %","100 %","200 %","25 %"],a:0,e:"(2 - 1) / 2 = 0,5. Dans ces formules, on peut remplacer RR par OR."},
+{t:"vf",q:"Un intervalle de confiance très large, comme [1,44-23,95], traduit une estimation imprécise.",a:true,e:"Signalé comme limite dans la lecture critique (variable composite, ORa = 5,86)."}]}
+]},
+{id:"u7",n:7,c:"--u7",title:"Biais et causalité",who:"Mélanie Bertin · Fondamentaux de l'épidémiologie",lessons:[
+{id:"u7l1",title:"Les trois biais",q:[
+{t:"assoc",q:"Associe chaque biais à sa définition.",p:[["Biais de sélection","la population source diffère de la population cible"],["Biais d'information","mauvaise classification de l'état ou de l'exposition des sujets"],["Biais de confusion","interférence d'un facteur extérieur non pris en compte"]],e:"Les trois grandes familles de biais."},
+{t:"qcm",q:"Un facteur de confusion est une variable qui…",o:["est associée à l'exposition, associée à la maladie, et n'est pas une étape intermédiaire du mécanisme causal","est la cause de la maladie","n'est liée qu'à l'exposition","est mesurée après la maladie"],a:0,e:"Il peut créer ou modifier artificiellement l'association observée."},
+{t:"qcm",q:"Le biais de mémorisation est un biais…",o:["d'information (de mesure)","de sélection","de confusion","écologique"],a:0,e:"Comme le biais de déclaration ou le biais lié à l'enquêteur."},
+{t:"qcm",q:"Des parents minimisent le temps d'écran de leur enfant par peur du jugement. Quel biais ?",o:["Biais de déclaration (information)","Biais de sélection","Confusion","Aucun biais"],a:0,e:"S'il diffère entre parents de cas et de témoins, il est différentiel."},
+{t:"qcm",q:"Les témoins sont recrutés chez des généralistes qui acceptent de participer, et il n'y a aucun témoin dans neuf communes. Quel biais ?",o:["Biais de sélection","Biais de mémorisation","Confusion","Biais de classement"],a:0,e:"Les témoins peuvent ne pas représenter la population d'où viennent les cas."},
+{t:"qcm",q:"Comment limite-t-on le biais de confusion à l'analyse ?",o:["En ajustant sur les facteurs de confusion mesurés (analyse multivariée)","En augmentant le seuil α","En supprimant les cas","En ne mesurant que l'exposition"],a:0,e:"D'où l'OR ajusté. Il reste toujours une confusion résiduelle possible."},
+{t:"vf",q:"Le biais d'information peut venir de l'enquêteur comme de la personne interrogée.",a:true,e:"Biais d'observation lié à l'enquêteur, biais de déclaration ou de mémorisation lié à la personne."},
+{t:"qcm",q:"Pourquoi le biais de mémorisation pèse-t-il plus en cas-témoins qu'en cohorte ?",o:["L'exposition est retracée après la survenue de la maladie","Les cohortes n'ont pas de questionnaire","Les cas-témoins sont plus grandes","Les témoins sont malades"],a:0,e:"En cohorte prospective, l'exposition est mesurée avant l'événement."}]},
+{id:"u7l2",title:"Du lien à la cause",q:[
+{t:"qcm",q:"Combien de critères de Bradford Hill le cours présente-t-il ?",o:["9","3","5","12"],a:0,e:"Force, stabilité, cohérence, spécificité, temporalité, dose-effet, plausibilité, preuve expérimentale, analogie."},
+{t:"assoc",q:"Associe chaque critère de Bradford Hill à sa définition.",p:[["Temporalité","la cause précède l'effet"],["Dose-effet","plus de dose, plus d'effet"],["Stabilité","l'association se répète dans d'autres populations"],["Plausibilité","un mécanisme biologique l'explique"]],e:"Seul critère indispensable : la temporalité."},
+{t:"qcm",q:"« La consommation de chocolat est liée au nombre de prix Nobel » (NEJM, 2012) illustre…",o:["l'effet cigogne : corrélation n'est pas causalité","une relation dose-effet prouvée","un biais de mémorisation","une preuve expérimentale"],a:0,e:"Un troisième facteur (richesse du pays) explique les deux."},
+{t:"vf",q:"Un faible effet exclut un lien de causalité.",a:false,e:"Plus l'effet est fort, plus le lien causal est probable, mais un faible effet n'implique pas l'absence de causalité."},
+{t:"qcm",q:"Qu'est-ce qui apporte une preuve de causalité selon le cours ?",o:["Un corpus de résultats épidémiologiques, toxicologiques et cliniques (revues, méta-analyses)","Une seule grande enquête","Une p-value très faible","Un OR supérieur à 5"],a:0,e:"La vie réelle n'est pas une expérience, et les pathologies ont des causes multiples."},
+{t:"qcm",q:"Écrans et langage : un enfant qui a déjà du mal à communiquer pourrait être davantage mis devant les écrans. Quel problème ?",o:["Causalité inverse (temporalité)","Biais écologique","Perdus de vue","Excès de risque"],a:0,e:"Limite non citée par les auteurs, relevée dans le corrigé."},
+{t:"trou",q:"Le critère de Bradford Hill de ___ veut qu'une cause produise un effet particulier dans une population particulière en l'absence d'autres explications.",o:["spécificité","cohérence","analogie","stabilité"],a:0,e:"La cohérence : l'association concorde avec les connaissances actuelles."},
+{t:"qcm",q:"Plus on fait de tests statistiques dans une étude…",o:["plus on risque de trouver par hasard une association significative","plus les résultats sont sûrs","moins le risque α augmente","plus les IC se resserrent"],a:0,e:"Multiplicité des analyses : limite relevée dans le tableau 2 de l'article."}]}
+]},
+{id:"u8",n:8,c:"--u8",title:"Analyse quantitative : décrire",who:"Mélanie Bertin · Fondamentaux de l'analyse quantitative",lessons:[
+{id:"u8l1",title:"Variables et unités statistiques",q:[
+{t:"qcm",q:"Qu'est-ce qu'une unité statistique ?",o:["L'élément de base décrit par des variables (individu, hôpital, séjour, commune…)","Une moyenne","Une variable qualitative","Un intervalle de confiance"],a:0,e:"Dans l'enquête HBSC, c'est l'élève ; dans l'open data PMSI, c'est l'acte."},
+{t:"assoc",q:"Associe chaque variable à son type.",p:[["Sexe","qualitative binaire"],["Groupe sanguin","qualitative nominale"],["Intensité de la douleur","qualitative ordinale"],["Nombre d'enfants","quantitative discrète"],["Taille (1,6 m ; 1,7 m…)","quantitative continue"]],e:"Qualitative (catégorielle) ou quantitative."},
+{t:"qcm",q:"Une variable ordinale est une variable…",o:["qualitative dont les modalités sont ordonnées, mais les écarts entre elles n'ont pas de sens","quantitative continue","sans ordre","binaire"],a:0,e:"Exemples du cours : classe ATP, intensité de la douleur."},
+{t:"vf",q:"Coder une variable qualitative en chiffres (oui = 1, non = 0) permet d'en calculer une moyenne interprétable.",a:false,e:"Elle ne permet que des dénombrements et des calculs de fréquence."},
+{t:"qcm",q:"Quel est le type de la variable « temps d'accès en minutes à l'ophtalmologiste le plus proche » ?",o:["Quantitative continue","Qualitative nominale","Qualitative ordinale","Binaire"],a:0,e:"Exercice sur l'accès aux soins."},
+{t:"qcm",q:"« Accessibilité au médecin généraliste en 15 min : oui / non » est une variable…",o:["qualitative binaire","quantitative continue","quantitative discrète","ordinale à 5 modalités"],a:0,e:"On a découpé un temps continu en deux classes."},
+{t:"qcm",q:"Moyenne et médiane s'appliquent…",o:["aux variables quantitatives","aux variables nominales","à toutes les variables","aux variables binaires uniquement"],a:0,e:"Pour une qualitative : effectifs et pourcentages."},
+{t:"qcm",q:"Pourquoi l'âge est-il présenté en moyenne ± écart-type et le sexe en effectif et pourcentage ?",o:["L'âge est quantitatif, le sexe qualitatif","Par convention graphique","Parce que l'âge est plus important","Parce que le sexe est binaire donc sans pourcentage"],a:0,e:"Question 7 de la lecture critique."}]},
+{id:"u8l2",title:"Position et dispersion",q:[
+{t:"assoc",q:"Classe chaque indicateur.",p:[["Moyenne","position"],["Médiane","position"],["Écart-type","dispersion"],["Écart interquartile","dispersion"],["Étendue","dispersion"]],e:"Position = autour de quoi ; dispersion = comment ça fluctue autour."},
+{t:"qcm",q:"Quel est l'inconvénient principal de la moyenne ?",o:["Elle est sensible aux valeurs extrêmes","Elle est difficile à calculer","Elle ne s'applique qu'aux qualitatives","Elle est insensible à la forme de la distribution"],a:0,e:"Chaque valeur a le même poids."},
+{t:"qcm",q:"La médiane…",o:["partage la population en deux groupes de même taille et est insensible aux valeurs extrêmes","est la somme divisée par l'effectif","mesure la dispersion","vaut toujours la moyenne"],a:0,e:"Limite : ne permet pas les tests statistiques usuels."},
+{t:"qcm",q:"Moyenne ≈ 4 et médiane = 1,8 : que peut-on dire de la distribution ?",o:["Asymétrique, tirée vers le haut par quelques valeurs élevées","Symétrique","Tirée vers le bas","Impossible"],a:0,e:"Exemple UNICEF du cours."},
+{t:"qcm",q:"Deux files d'attente ont une moyenne de 6 min, mais des étendues de 3 min et 13 min. Leçon ?",o:["Il faut toujours donner position ET dispersion","La moyenne suffit","L'étendue est inutile","Les files sont identiques"],a:0,e:"Conseil : reporter le minimum et le maximum plutôt que l'amplitude seule."},
+{t:"qcm",q:"L'écart-type est…",o:["la racine carrée de la variance, soit l'écart moyen (quadratique) des valeurs à la moyenne","le carré de la variance","la différence max - min","Q3 - Q1"],a:0,e:"Variance = écart-type²."},
+{t:"qcm",q:"L'écart interquartile contient…",o:["les 50 % de valeurs centrales, entre Q1 et Q3","toutes les valeurs","les 25 % les plus hauts","les valeurs extrêmes"],a:0,e:"Dans une boîte à moustaches, les valeurs au-delà de Q3 + 1,5 × IQR sont extrêmes."},
+{t:"qcm",q:"Le rapport interdécile D9/D1 des revenus compare…",o:["le revenu plancher des 10 % les plus aisés au revenu plafond des 10 % les plus pauvres","la moyenne et la médiane","les deux quartiles centraux","le revenu moyen des deux extrêmes"],a:0,e:"Source Insee via Sirsé."}]},
+{id:"u8l3",title:"Intervalles et graphiques",q:[
+{t:"qcm",q:"Un intervalle de confiance est…",o:["une plage de valeurs qui a une probabilité donnée de contenir la vraie valeur du paramètre dans la population","la plage des valeurs observées","l'écart entre Q1 et Q3","la marge d'erreur de saisie"],a:0,e:"Il s'applique à une moyenne, une proportion, un effectif…"},
+{t:"assoc",q:"Associe chaque graphique au type de variable.",p:[["Histogramme","quantitative continue"],["Diagramme en barres","qualitative"],["Diagramme circulaire","qualitative, peu de modalités"],["Courbe épidémique","nombre de cas dans le temps"]],e:"Ne pas confondre histogramme et diagramme en barres."},
+{t:"vf",q:"Dans un histogramme, changer la largeur de classe (5 kg puis 1 kg) change l'allure de la distribution.",a:true,e:"Exemple des poids des collégiens."},
+{t:"qcm",q:"Que faut-il éviter selon le cours ?",o:["Les graphiques surchargés, en 3D ou en camembert avec trop de modalités","Les histogrammes","Les courbes épidémiques","Les cartes"],a:0,e:"Exemples « à éviter » : arrestations en camembert 3D, trop de modalités."},
+{t:"qcm",q:"Qu'est-ce qu'un paramètre de forme ?",o:["L'allure de la distribution d'une série","Sa valeur centrale","Sa fluctuation autour de la moyenne","Son effectif"],a:0,e:"Trois types de paramètres : position, dispersion, forme."},
+{t:"vf",q:"On peut présenter une moyenne sans aucune mesure de dispersion.",a:false,e:"Les deux paramètres, dispersion et position, doivent toujours être donnés."},
+{t:"qcm",q:"Quartiles, quintiles, déciles découpent la distribution en…",o:["4, 5 et 10 parts égales","3, 5 et 10 parts","2, 4 et 8 parts","parts inégales"],a:0,e:"Q2 = médiane = D5."},
+{t:"qcm",q:"Pour représenter des taux de mortalité standardisés par canton, on utilise…",o:["une carte","un histogramme","un diagramme circulaire","une boîte à moustaches"],a:0,e:"Représentations géographiques par région ou canton."}]}
+]},
+{id:"u9",n:9,c:"--u9",title:"Les tests statistiques",who:"Mélanie Bertin · d'après T. Ancelle et N. Le Meur",lessons:[
+{id:"u9l1",title:"Hypothèses et risques",q:[
+{t:"qcm",q:"À quelle question répond un test statistique ?",o:["L'écart observé est-il une vraie différence ou une fluctuation d'échantillonnage ?","Quelle est la cause de la maladie ?","Quelle est la taille de l'effet ?","L'échantillon est-il biaisé ?"],a:0,e:"Exemple : le VGM diffère-t-il vraiment entre employés et ouvriers ?"},
+{t:"qcm",q:"Pour comparer deux moyennes, l'hypothèse nulle H0 est…",o:["µ1 = µ2","µ1 ≠ µ2","µ1 > µ2","p < 0,05"],a:0,e:"H1 : µ1 ≠ µ2."},
+{t:"qcm",q:"Le risque α (erreur de première espèce) est…",o:["la probabilité de rejeter H0 à tort, alors qu'elle est vraie","la probabilité d'accepter H0 à tort","la puissance du test","la taille de l'effet"],a:0,e:"On la juge plus grave que l'erreur de deuxième espèce (β : accepter H0 à tort)."},
+{t:"assoc",q:"Associe chaque notion à sa définition.",p:[["Risque α","rejeter H0 à tort"],["Risque β","accepter H0 à tort"],["Puissance (1 - β)","rejeter H0 à raison"]],e:"On fixe α a priori, en général à 5 %."},
+{t:"qcm",q:"Différence entre α et p ?",o:["α est fixé a priori, avant le test ; p est calculé a posteriori","Aucune","p est fixé avant, α calculé après","α concerne H1, p concerne H0"],a:0,e:"Les deux concernent le risque de rejeter H0 à tort."},
+{t:"qcm",q:"VGM : employés 94,7, ouvriers 92,5, p = 0,0042. Conclusion ?",o:["On rejette H0 : la différence est significative au seuil de 5 %","On accepte H0","La différence est très grande","On ne peut rien conclure"],a:0,e:"p < 0,05."},
+{t:"vf",q:"Un p très faible signifie que la différence est très grande.",a:false,e:"Il signifie que le risque de se tromper en rejetant H0 est très faible, pas que l'écart est important."},
+{t:"trou",q:"Les seuils de signification les plus utilisés sont α = 0,05 et α = ___.",o:["0,01","0,5","0,10","0,001"],a:0,e:"5 % et 1 %."}]},
+{id:"u9l2",title:"Chi2 et Student",q:[
+{t:"assoc",q:"Associe chaque test aux variables comparées.",p:[["Student ou Mann-Whitney","une variable quantitative entre deux groupes"],["Chi2 ou test exact de Fisher","une variable qualitative entre groupes"]],e:"Question 7 du corrigé de lecture critique."},
+{t:"qcm",q:"Que compare le Chi2 du Baromètre 2021 (activité physique) ?",o:["Les proportions entre hommes et femmes (indépendance entre sexe et atteinte des recommandations)","Deux moyennes","Deux médianes","Deux variances"],a:0,e:"Chi2 de Pearson avec correction de Rao-Scott."},
+{t:"qcm",q:"Effectif théorique d'une case sous l'hypothèse d'indépendance ?",o:["Total ligne × total colonne / effectif total","Observé - théorique","Total ligne / total colonne","Effectif total / 4"],a:0,e:"Puis Chi2 = somme de (observé - théorique)² / théorique."},
+{t:"qcm",q:"200 personnes : hommes 73 atteignent / 27 non ; femmes 59 / 41. Effectif théorique « hommes qui atteignent » ?",o:["66","73","59","100"],a:0,e:"100 × 132 / 200 = 66 (et 34 pour « n'atteignent pas »)."},
+{t:"qcm",q:"Même tableau : que vaut le Chi2 ?",o:["Environ 4,37","Environ 1,48","Environ 14","Environ 0,05"],a:0,e:"2 × 49/66 + 2 × 49/34 ≈ 1,48 + 2,88 = 4,37."},
+{t:"qcm",q:"Seuil critique à 1 ddl et α = 0,05 : 3,84. Conclusion avec Chi2 = 4,37 ?",o:["Association significative entre sexe et atteinte des recommandations","Pas d'association","On accepte H0","Test impossible"],a:0,e:"4,37 > 3,84 : on rejette H0. Même sens que les vraies données (p < 0,001)."},
+{t:"qcm",q:"Test de Student sur la distance d'accès aux ophtalmologistes en 1990 et 2006 : H0 ?",o:["La distance moyenne est la même en 1990 et en 2006","La distance a diminué","La distance a augmenté","Les distances sont indépendantes"],a:0,e:"H1 : les distances moyennes diffèrent."},
+{t:"vf",q:"12 % des communes du Languedoc-Roussillon à plus de 15 min d'un généraliste contre 6 % en Rhône-Alpes : l'écart est forcément significatif.",a:false,e:"Sans test ni IC, on ne peut pas conclure à la lecture de ces seuls résultats."}]}
+]},
+{id:"u10",n:10,c:"--u10",title:"Exercices : accès aux soins et activité physique",who:"Mélanie Bertin · études de cas",lessons:[
+{id:"u10l1",title:"Lire une boîte et des barres",q:[
+{t:"qcm",q:"Graphique 1 (temps d'accès aux spécialistes, 2007) : comment s'appelle ce graphique ?",o:["Une boîte à moustaches (box plot)","Un histogramme","Un diagramme circulaire","Une courbe épidémique"],a:0,e:"Avec la moyenne, la médiane, Q1-Q3 (25-75 %), les 90e et 95e percentiles et le minimum."},
+{t:"qcm",q:"Pour les ophtalmologistes, la moyenne est d'environ 10 min et la médiane d'environ 4 min. Interprétation ?",o:["La moitié de la population est à moins de 4 min, mais quelques temps très longs tirent la moyenne vers le haut","Tout le monde est à 10 min","La moitié est à plus de 10 min","La distribution est symétrique"],a:0,e:"Moyenne > médiane : distribution asymétrique."},
+{t:"qcm",q:"Pour les ophtalmologistes, le haut de la boîte est à environ 17 min. Cela veut dire…",o:["75 % de la population est à moins de 17 min","17 % de la population est à moins de 17 min","le temps maximal est 17 min","la moyenne est 17 min"],a:0,e:"C'est le 3e quartile."},
+{t:"qcm",q:"Le point du 95e percentile des ophtalmologistes est à environ 31 min. Donc…",o:["5 % de la population met plus de 31 min","95 % met plus de 31 min","le maximum est 31 min","la médiane est 31 min"],a:0,e:"Le 90e percentile est à environ 26 min."},
+{t:"vf",q:"Pour toutes les spécialités, au moins 25 % de la population accède au spécialiste en 0 minute.",a:true,e:"Le bas de chaque boîte (1er quartile) est à 0 : au moins un quart vit dans une commune équipée."},
+{t:"qcm",q:"Quel autre indicateur décrit la distribution autour de la moyenne ?",o:["L'écart-type","La médiane","Le mode","Le 95e percentile"],a:0,e:"La moyenne s'accompagne d'un écart-type."},
+{t:"qcm",q:"Graphique 2 (part des communes avec au moins un spécialiste en 1982, 1990, 2007) est…",o:["un diagramme en barres groupées","un histogramme","une boîte à moustaches","un nuage de points"],a:0,e:"Ophtalmologistes : environ 2,3 % en 1982, 3,1 % en 1990, 3,25 % en 2007."},
+{t:"qcm",q:"Tendance 1982-2007 : vrai pour toutes les spécialités ?",o:["Non : la plupart progressent, mais pédiatres, gynécologues et ORL baissent entre 1990 et 2007","Oui, toutes augmentent","Toutes baissent","Toutes sont stables"],a:0,e:"Les urologues stagnent de 1982 à 1990 puis progressent. Unité statistique des données brutes : la commune."}]},
+{id:"u10l2",title:"Baromètre santé 2021",q:[
+{t:"qcm",q:"Atteinte des recommandations d'activité physique : hommes 72,9 %, femmes 59,3 %, p < 0,001. Conclusion ?",o:["Les hommes les atteignent significativement plus que les femmes","Pas de différence","Les femmes les atteignent plus","Résultat non interprétable"],a:0,e:"On rejette H0 d'indépendance entre sexe et atteinte des recommandations."},
+{t:"qcm",q:"Sédentarité élevée (plus de 7 h assis) : hommes 23,3 %, femmes 22,2 %, p = 0,09. Conclusion ?",o:["Pas de différence significative entre hommes et femmes","Les hommes sont significativement plus sédentaires","Les femmes le sont plus","p = 0,09 est significatif"],a:0,e:"p > 0,05. Idem pour le temps d'écran (p = 0,67) et les ruptures de sédentarité (p = 0,16)."},
+{t:"vf",q:"Le cumul d'une activité physique insuffisante et d'une sédentarité élevée touche significativement plus les femmes (9,9 %) que les hommes (8,6 %).",a:true,e:"p < 0,01."},
+{t:"qcm",q:"Chez les hommes, quelles situations sont défavorablement associées à l'atteinte des recommandations ?",o:["Le chômage (ORa 0,7 [0,5-0,8]) et les autres inactifs (ORa 0,5 [0,3-0,7])","Les études et la retraite","Le travail","Aucune"],a:0,e:"Études (0,8 [0,6-1,1]) et retraite (1,3 [1,0-1,6], p = 0,06) : non significatifs. Référence : le travail."},
+{t:"qcm",q:"Chez les femmes, quelle structure familiale est associée à l'atteinte des recommandations ?",o:["Couple avec enfant(s), négativement : ORa 0,8 [0,7-0,9]","Famille monoparentale, positivement","Couple sans enfant, positivement","Aucune"],a:0,e:"Référence : vivre seule. Les autres structures ne sont pas significatives."},
+{t:"qcm",q:"Âge et activité physique : quelle différence hommes-femmes ?",o:["Chez les hommes, les 18-44 ans font mieux que les 45-54 ans (18-24 : ORa 1,7) ; chez les femmes, pas d'avantage des jeunes. Dans les deux sexes, les 75-85 ans font moins bien","Aucune association avec l'âge","Les femmes jeunes font mieux","Les hommes âgés font mieux"],a:0,e:"75-85 ans : ORa 0,6 chez les hommes, 0,7 chez les femmes."},
+{t:"qcm",q:"Agglomération parisienne, par rapport aux villes de moins de 20 000 habitants ?",o:["Moins d'atteinte des recommandations dans les deux sexes (ORa 0,7)","Plus d'atteinte","Pas de différence","Seulement chez les hommes"],a:0,e:"Hommes 0,7 [0,6-0,9] ; femmes 0,7 [0,6-0,9]. Le rural est favorable chez les hommes (1,2 [1,0-1,4])."},
+{t:"qcm",q:"Femmes sans le bac : ORa = 0,7 [0,6-0,8] par rapport au bac. Interprétation ?",o:["Toutes choses égales par ailleurs, leurs odds d'atteindre les recommandations sont 30 % plus faibles","Elles ont 0,7 fois plus de risque d'être malades","70 % d'entre elles atteignent les recommandations","Non significatif"],a:0,e:"ORa < 1 et IC sans 1 : association négative significative."}]}
+]},
+{id:"u11",n:11,c:"--u11",title:"Lecture critique : écrans et langage",who:"Évaluation du vendredi 2 octobre · corrigé",lessons:[
+{id:"u11l1",title:"Question, design, population",q:[
+{t:"qcm",q:"Quelle est la question de l'article ?",o:["L'exposition aux écrans des jeunes enfants est-elle associée aux troubles primaires du langage ?","Les écrans améliorent-ils le langage ?","Quelle est la prévalence des troubles du langage en France ?","Les orthophonistes sont-ils assez nombreux ?"],a:0,e:"Étude cas-témoins en Ille-et-Vilaine."},
+{t:"qcm",q:"Pourquoi une étude cas-témoins plutôt qu'une cohorte ?",o:["Le trouble primaire du langage est relativement peu fréquent (4 à 6 %) : partir des cas est plus efficace, plus court et moins coûteux","Pour calculer un RR","Parce que l'exposition est rare","Parce qu'une cohorte est interdite chez l'enfant"],a:0,e:"Une cohorte aurait suivi des enfants exposés et non exposés : plus long, plus cher, moins efficient."},
+{t:"qcm",q:"Quelle est la définition d'un cas ?",o:["Enfant de 3,5 à 6,5 ans, né entre 2010 et 2012, suivi par un orthophoniste pour un trouble primaire du langage","Tout enfant exposé aux écrans","Enfant suivi par un généraliste","Enfant avec un trouble auditif"],a:0,e:"Témoin : même âge et période de naissance, suivi par un généraliste, sans trouble ni suivi orthophonique."},
+{t:"qcm",q:"Pourquoi exclure la prématurité, les maladies congénitales, les troubles neurologiques ou auditifs ?",o:["Ils peuvent causer un trouble SECONDAIRE du langage","Parce qu'ils regardent moins les écrans","Pour augmenter l'effectif","Par manque de place"],a:0,e:"On veut étudier les troubles primaires. Les enfants dont aucun parent ne parlait français à la maison étaient aussi exclus."},
+{t:"qcm",q:"Combien d'enfants dans l'étude ?",o:["276 : 167 cas et 109 témoins","500 cas et 500 témoins","109 cas et 167 témoins","1 000 enfants"],a:0,e:"Âge moyen : 5,2 ± 0,8 ans."},
+{t:"qcm",q:"Garçons : 70,7 % des cas contre 50,5 % des témoins, p = 0,0007. Conclusion ?",o:["Les cas sont significativement plus souvent des garçons","Pas de différence","Les témoins sont plus souvent des garçons","Il faut exclure les garçons"],a:0,e:"Les groupes diffèrent aussi par la fratrie plus âgée, la situation familiale et le niveau d'études des parents."},
+{t:"qcm",q:"Comment l'exposition est-elle mesurée ?",o:["Par un questionnaire parental identique pour cas et témoins, testé auprès de 32 personnes","Par un capteur sur les écrans","Par le dossier médical","Par l'orthophoniste"],a:0,e:"Types et nombre d'écrans, écrans personnels, âge de première exposition, durée, moments, accompagnement parental."},
+{t:"vf",q:"L'exposition est mesurée objectivement.",a:false,e:"Elle est déclarée par les parents : biais de mémorisation, peur du jugement, possible biais différentiel entre cas et témoins."}]},
+{id:"u11l2",title:"Résultats",q:[
+{t:"qcm",q:"Exposition le matin avant l'école : OR = 2,82 [1,63-4,87], ORa = 3,42 [1,64-7,14]. Lecture ?",o:["L'association reste significative après ajustement","Elle disparaît après ajustement","Elle devient protectrice","Elle n'est jamais significative"],a:0,e:"Ajustement sur le sexe, la fratrie plus âgée, la situation familiale et le niveau d'études des parents."},
+{t:"qcm",q:"Accès à la télévision : OR = 2,74 [0,96-7,77], ORa = 0,75 [0,21-2,66]. Lecture ?",o:["L'estimation change fortement après ajustement et l'IC contient 1 : pas d'association mise en évidence","Association significative et renforcée par l'ajustement","La télévision devient un facteur protecteur démontré","Association significative avant comme après"],a:0,e:"C'est la lecture du corrigé. L'OR brut n'était déjà pas significatif : son IC [0,96-7,77] contient 1, de justesse."},
+{t:"qcm",q:"Tableau 3 (modèle final, sélection pas à pas) : quels facteurs restent associés ?",o:["L'exposition le matin avant l'école (ORa 3,40 [1,60-7,23]) et discuter rarement ou jamais du contenu avec les parents (ORa 2,14 [1,01-4,54])","L'accès à la télévision et à la tablette","Le temps total d'écran seul","Aucun"],a:0,e:"Deux facteurs après analyses multivariées."},
+{t:"qcm",q:"Comment est construite la variable composite ?",o:["En croisant les deux facteurs du modèle final : 4 modalités, référence = aucun des deux","En additionnant les heures d'écran","À partir du bilan orthophonique","En combinant âge et sexe"],a:0,e:"Aucun facteur / matin seul / discussion rare seule / les deux."},
+{t:"qcm",q:"Enfants cumulant les deux facteurs : ORa = 5,86 [1,44-23,95]. Interprétation juste ?",o:["Leurs odds de trouble sont environ 5,9 fois plus élevées que chez les enfants sans aucun des deux, avec une estimation très imprécise","Ils ont 5,86 fois plus de risque, estimation précise","Résultat non significatif","5,86 % d'entre eux ont un trouble"],a:0,e:"IC très large : prudence."},
+{t:"qcm",q:"Quelle information manque pour recalculer les OR ?",o:["Les effectifs croisés exposition × maladie (tableau 2 × 2 : a, b, c, d)","La moyenne d'âge","Le nom des communes","La p-value"],a:0,e:"OR = ad / bc."},
+{t:"vf",q:"Dans cette étude, on aurait pu calculer un risque relatif.",a:false,e:"Sélection sur la maladie : la proportion de cas ne reflète ni la prévalence ni l'incidence. L'OR approche le RR si l'événement est rare, sans devenir un RR."},
+{t:"qcm",q:"Que retenir de l'étude ?",o:["Une association entre deux facteurs (écrans le matin, peu de discussion) et les troubles primaires du langage, pas une preuve de causalité","Les écrans causent les troubles du langage","Les écrans n'ont aucun effet","La télévision est le facteur principal"],a:0,e:"Association ≠ causalité."}]},
+{id:"u11l3",title:"Limites et regard critique",q:[
+{t:"assoc",q:"Associe chaque limite citée par les auteurs à son contenu.",p:[["Biais de classement","le bilan orthophonique n'a pas été recueilli"],["Biais de déclaration","souvenir et peur du jugement des parents"],["Confusion résiduelle","les ajustements ne contrôlent pas tout"],["Biais de sélection","faible participation des généralistes, aucun témoin dans 9 communes"]],e:"Autre limite citée : l'étude a eu lieu l'été (mais même effet chez cas et témoins)."},
+{t:"qcm",q:"Laquelle est une limite NON citée par les auteurs mais relevée dans le corrigé ?",o:["La causalité inverse : le trouble peut modifier l'usage des écrans","La saison d'été","La confusion résiduelle","Le biais de déclaration"],a:0,e:"Autres limites non citées : témoins recrutés ailleurs que les cas, multiplicité des tests, sélection pas à pas, IC très larges."},
+{t:"qcm",q:"Pourquoi la sélection pas à pas (stepwise) est-elle discutable ?",o:["Elle peut produire des modèles instables et des estimations optimistes","Elle est interdite","Elle supprime tous les facteurs de confusion","Elle empêche de calculer un OR"],a:0,e:"Limite méthodologique relevée dans le corrigé."},
+{t:"qcm",q:"Quel reproche fait-on au résumé de l'article ?",o:["Il interprète l'OR comme un RR (« risque 3,4 fois plus élevé ») au lieu de parler d'odds","Il oublie les p-values","Il ne donne pas l'effectif","Il cite trop de références"],a:0,e:"Formulation juste : « les odds de présenter un trouble étaient 3,4 fois plus élevées »."},
+{t:"qcm",q:"Pourquoi le recrutement des témoins chez les généralistes et des cas chez les orthophonistes pose-t-il problème ?",o:["Les deux groupes peuvent ne pas venir de la même population source","Les généralistes n'ont pas d'enfants","Cela augmente l'effectif","Cela crée un biais de mémoire"],a:0,e:"Biais de sélection potentiel."},
+{t:"vf",q:"L'introduction justifie bien la question : contexte, problème, hypothèse, connaissances antérieures (surtout sur la télévision) et objectif.",a:true,e:"Question 1 du corrigé."},
+{t:"ordre",q:"Remets dans l'ordre une lecture critique d'article.",items:["Question et contexte (introduction)","Design de l'étude et justification","Population : inclusion, exclusion, définition des cas","Mesure de l'exposition et des facteurs de confusion","Résultats : tableaux, OR, IC","Limites et biais","Conclusion : association ou causalité ?"],e:"C'est l'ordre des 15 questions de l'évaluation."},
+{t:"qcm",q:"Qu'est-ce qui doit être vérifié avant d'utiliser un Chi2 ?",o:["Des effectifs théoriques suffisants (sinon test exact de Fisher)","Une distribution normale","Des variances égales","Un échantillon apparié"],a:0,e:"Pour Student : normalité et variances comparables, sinon Mann-Whitney. (Précision classique : le corrigé pose la question sans détailler.)"}]}
+]}
+];
+
+/* ---------- État ---------- */
+const KEY="vigie.v1";
+let S=load();
+function load(){try{const r=localStorage.getItem(KEY);if(r){const o=JSON.parse(r);if(o&&typeof o==='object')return Object.assign({xp:0,streak:0,last:null,lessons:{}},o);}}catch(e){}return{xp:0,streak:0,last:null,lessons:{}};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function today(){const d=new Date();return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();}
+function touchStreak(){const t=today();if(S.last===t)return;const y=new Date();y.setDate(y.getDate()-1);const ys=y.getFullYear()+"-"+(y.getMonth()+1)+"-"+y.getDate();S.streak=(S.last===ys)?S.streak+1:1;S.last=t;}
+function streakAlive(){if(!S.last)return false;const t=today();const y=new Date();y.setDate(y.getDate()-1);const ys=y.getFullYear()+"-"+(y.getMonth()+1)+"-"+y.getDate();return S.last===t||S.last===ys;}
+const app=document.getElementById('app');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const buzz=p=>{try{if(navigator.vibrate)navigator.vibrate(p);}catch(e){}};
+const ICON={
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  star:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg>',
+  fire:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.6 2c.4 3.2 3.9 4.6 3.9 9.4 0 1.5-.4 2.7-1.1 3.6.2-2.6-1.3-4.3-2.6-5.2.2 2.2-1.9 3.4-1.9 5.9 0 1 .3 1.8.8 2.4C8.6 17.6 6 15.4 6 11.6 6 6.6 12 5.6 12.6 2z"/></svg>',
+  bolt:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  cup:'<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8.5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20.5 20.5l6 6" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><path d="M10 15.5l2.5-3 2.5 2.5 3-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  trophy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4z"/><path d="M7 6H4v2a3 3 0 003 3M17 6h3v2a3 3 0 01-3 3"/></svg>'
+};
+const allLessons=()=>UNITS.flatMap(u=>u.lessons.map(l=>({u,l})));
+
+/* ---------- Écran d'accueil ---------- */
+function home(){
+  const total=allLessons().length;const done=allLessons().filter(x=>S.lessons[x.l.id]&&S.lessons[x.l.id].done).length;
+  const next=allLessons().find(x=>!(S.lessons[x.l.id]&&S.lessons[x.l.id].done));
+  let h=`<div class="screen"><header class="hdr"><div class="logo">${ICON.cup.replace('viewBox','style="color:var(--brand)" viewBox')}Vigie</div><div class="stats"><div class="stat fire" title="Jours d'affilée">${ICON.fire}${streakAlive()?S.streak:0}</div><div class="stat xp" title="Points d'expérience">${ICON.bolt}${S.xp}</div></div></header>
+  <div class="home">
+  <section class="hero"><h1>UE2 · Observation de la santé</h1><p>Onze unités tirées des cours de Mélanie Bertin (EHESP) : sources de données, épidémiologie, analyse quantitative, tests, exercices et la lecture critique d'article évaluée le vendredi 2 octobre. Chaque leçon dure trois à cinq minutes et te fait gagner des points.</p>
+  <div class="prog"><i style="width:${total?Math.round(done/total*100):0}%"></i></div><div class="prog-l">${done} leçon${done>1?'s':''} sur ${total} terminée${done>1?'s':''}</div>
+  <div class="row" style="margin-top:12px">${next?`<button class="btn" data-start="${next.l.id}">${done?'Continuer':'Commencer'}</button>`:''}<button class="btn ghost" data-review="1">Révision mixte</button><a class="btn ghost" href="${FICHES_URL}">Fiches détaillées</a></div></section>`;
+  UNITS.forEach(u=>{
+    const ld=u.lessons.filter(l=>S.lessons[l.id]&&S.lessons[l.id].done).length;
+    const gold=u.lessons.filter(l=>S.lessons[l.id]&&S.lessons[l.id].best===100).length;
+    h+=`<section class="unit" style="--c:var(${u.c});--cd:var(${u.c}d)"><div class="unit-h"><div><div class="n">Unité ${u.n}</div><h2>${esc(u.title)}</h2><div class="who">${esc(u.who)}</div></div><div class="crown">${ICON.star}${gold}/${u.lessons.length}</div></div><div class="path">`;
+    u.lessons.forEach((l,i)=>{
+      const st=S.lessons[l.id];const isNext=next&&next.l.id===l.id;
+      const cls=st&&st.done?(st.best===100?'node gold':'node done'):(isNext?'node next':'node');
+      const inner=st&&st.done?(st.best===100?ICON.star:ICON.check):(i+1);
+      const sub=st&&st.done?`Meilleur score : ${st.best} %`:(isNext?'À faire maintenant':`${l.q.length} questions`);
+      h+=`<button class="${cls}" data-start="${l.id}"><span class="disc">${inner}</span><span><div class="t">${esc(l.title)}</div><div class="s">${sub}</div></span></button>`;
+    });
+    h+=`</div></section>`;
+  });
+  h+=`<p class="foot-note">Ta progression est enregistrée sur cet appareil. Les <a href="${FICHES_URL}">fiches détaillées</a> reprennent chaque unité avec les définitions, les tableaux et les références à citer.</p></div></div>`;
+  app.innerHTML=h;window.scrollTo(0,0);
+  app.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>{const x=allLessons().find(y=>y.l.id===b.dataset.start);startLesson(x.u,x.l,x.l.q,false);}));
+  app.querySelector('[data-review]').addEventListener('click',()=>{
+    const doneQ=allLessons().filter(x=>S.lessons[x.l.id]&&S.lessons[x.l.id].done).flatMap(x=>x.l.q.map(q=>Object.assign({},q,{_u:x.u})));
+    const pool=doneQ.length>=12?doneQ:allLessons().flatMap(x=>x.l.q.map(q=>Object.assign({},q,{_u:x.u})));
+    startLesson(null,{id:'review',title:'Révision mixte'},shuffle(pool).slice(0,12),true);
+  });
+}
+
+/* ---------- Moteur de leçon ---------- */
+let L=null;
+function startLesson(u,l,qs,isReview){
+  L={u,l,isReview,queue:qs.map((q,i)=>({q,i,retry:false})),total:qs.length,idx:0,firstTry:0,seen:new Set(),wrongOnce:new Set(),wrongList:[],cur:null,answer:null,checked:false};
+  nextQ();
+}
+function nextQ(){
+  if(!L.queue.length)return finish();
+  L.cur=L.queue.shift();L.answer=null;L.checked=false;renderQ();
+}
+function progressPct(){const solved=L.seen.size- L.queue.filter(x=>x.retry).length;return Math.max(0,Math.min(100,Math.round(((L.total-L.queue.length-(L.cur?1:0))/L.total)*100)));}
+function renderQ(){
+  const {q}=L.cur;const u=L.u||q._u||UNITS[0];const color=`var(${u.c})`;
+  const kindName={qcm:'Choisis la bonne réponse',vf:'Vrai ou faux ?',trou:'Complète la phrase',assoc:'Associe les paires',ordre:'Remets dans l\'ordre'}[q.t];
+  const done=L.total-L.queue.length-1;
+  let h=`<div class="screen" style="--c:${color}"><div class="lesson"><div class="lbar"><button class="x" data-quit aria-label="Quitter la leçon">${ICON.x.replace('<svg','<svg style="width:20px;height:20px"')}</button><div class="pb"><i style="width:${Math.round(done/L.total*100)}%"></i></div><div class="cnt">${done}/${L.total}</div></div>
+  <div class="kind">${L.isReview?esc(u.title)+' · ':''}${kindName}${L.cur.retry?' · à nouveau':''}</div>`;
+  if(q.t==='qcm'){
+    L.view={opts:shuffle(q.o.map((t,i)=>({t,i})))};
+    h+=`<div class="qtext">${esc(q.q)}</div><div class="opts">${L.view.opts.map((o,k)=>`<button class="opt" data-pick="${k}"><span class="k">${k+1}</span><span>${esc(o.t)}</span></button>`).join('')}</div>`;
+  }else if(q.t==='vf'){
+    h+=`<div class="qtext">${esc(q.q)}</div><div class="vf"><button class="opt" data-pick="1">Vrai</button><button class="opt" data-pick="0">Faux</button></div>`;
+  }else if(q.t==='trou'){
+    L.view={opts:shuffle(q.o.map((t,i)=>({t,i})))};
+    h+=`<div class="qtext" id="qt">${esc(q.q).replace('___','<span class="gap" id="gap">&nbsp;</span>')}</div><div class="bank">${L.view.opts.map((o,k)=>`<button class="chipb" data-pick="${k}">${esc(o.t)}</button>`).join('')}</div>`;
+  }else if(q.t==='assoc'){
+    const left=shuffle(q.p.map((p,i)=>({t:p[0],i})));const right=shuffle(q.p.map((p,i)=>({t:p[1],i})));
+    L.view={left,right,pickL:null,pickR:null,matched:new Set(),errors:0};
+    h+=`<div class="qtext">${esc(q.q)}</div><div class="assoc">${left.map((o,k)=>`<button class="opt" data-l="${k}">${esc(o.t)}</button><button class="opt" data-r="${k}">${esc(right[k].t)}</button>`).join('')}</div>`;
+  }else if(q.t==='ordre'){
+    L.view={items:shuffle(q.items.map((t,i)=>({t,i}))),slots:[]};
+    h+=`<div class="qtext">${esc(q.q)}</div><div class="slots" id="slots"></div><div class="bank" id="bank"></div>`;
+  }
+  h+=`</div><div class="fb" id="fb"><div class="fb-in"><button class="btn wide" id="check" disabled>Vérifier</button></div></div></div>`;
+  app.innerHTML=h;window.scrollTo(0,0);
+  app.querySelector('[data-quit]').addEventListener('click',quitPrompt);
+  const check=document.getElementById('check');
+  check.addEventListener('click',()=>{if(L.checked)nextQ();else doCheck();});
+  if(q.t==='qcm'||q.t==='vf'){
+    app.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;app.querySelectorAll('[data-pick]').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');L.answer=+b.dataset.pick;check.disabled=false;}));
+  }else if(q.t==='trou'){
+    app.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;app.querySelectorAll('[data-pick]').forEach(x=>x.classList.remove('used'));b.classList.add('used');L.answer=+b.dataset.pick;const g=document.getElementById('gap');g.textContent=L.view.opts[L.answer].t;g.classList.add('filled');check.disabled=false;}));
+  }else if(q.t==='assoc'){
+    const V=L.view;
+    const upd=()=>{app.querySelectorAll('[data-l]').forEach(b=>{const k=+b.dataset.l;b.classList.toggle('sel',V.pickL===k);b.classList.toggle('gone',V.matched.has('L'+k));b.disabled=V.matched.has('L'+k);});app.querySelectorAll('[data-r]').forEach(b=>{const k=+b.dataset.r;b.classList.toggle('sel',V.pickR===k);b.classList.toggle('gone',V.matched.has('R'+k));b.disabled=V.matched.has('R'+k);});};
+    const tryMatch=()=>{if(V.pickL===null||V.pickR===null)return;const lb=app.querySelector(`[data-l="${V.pickL}"]`),rb=app.querySelector(`[data-r="${V.pickR}"]`);
+      if(V.left[V.pickL].i===V.right[V.pickR].i||q.p[V.left[V.pickL].i][1]===V.right[V.pickR].t){V.matched.add('L'+V.pickL);V.matched.add('R'+V.pickR);lb.classList.add('right');rb.classList.add('right');buzz(15);}
+      else{V.errors++;lb.classList.add('wrong','shake');rb.classList.add('wrong','shake');buzz([30,40,30]);setTimeout(()=>{lb.classList.remove('wrong','shake');rb.classList.remove('wrong','shake');},450);}
+      V.pickL=null;V.pickR=null;setTimeout(upd,V.matched.size===V.left.length*2?0:120);
+      if(V.matched.size===V.left.length*2){L.answer=V.errors;setTimeout(doCheck,250);}};
+    app.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;V.pickL=V.pickL===+b.dataset.l?null:+b.dataset.l;upd();tryMatch();}));
+    app.querySelectorAll('[data-r]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;V.pickR=V.pickR===+b.dataset.r?null:+b.dataset.r;upd();tryMatch();}));
+  }else if(q.t==='ordre'){
+    const V=L.view;const slots=document.getElementById('slots'),bank=document.getElementById('bank');
+    const draw=()=>{slots.innerHTML=q.items.map((_,k)=>{const it=V.slots[k];return `<button class="slot ${it?'full':''}" data-s="${k}"><span class="i">${k+1}</span><span>${it?esc(it.t):''}</span></button>`;}).join('');
+      bank.innerHTML=V.items.map((it,k)=>`<button class="chipb ${V.slots.some(s=>s&&s.k===k)?'used':''}" data-b="${k}" ${V.slots.some(s=>s&&s.k===k)?'disabled':''}>${esc(it.t)}</button>`).join('');
+      slots.querySelectorAll('[data-s]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;const k=+b.dataset.s;if(V.slots[k]){V.slots.splice(k,1);draw();}}));
+      bank.querySelectorAll('[data-b]').forEach(b=>b.addEventListener('click',()=>{if(L.checked)return;V.slots.push({t:V.items[+b.dataset.b].t,i:V.items[+b.dataset.b].i,k:+b.dataset.b});draw();}));
+      check.disabled=V.slots.length!==q.items.length;L.answer=V.slots.map(s=>s.i);};
+    draw();
+  }
+}
+function doCheck(){
+  const {q}=L.cur;let ok=false,shown='';
+  if(q.t==='qcm'){ok=L.view.opts[L.answer].i===q.a;shown=q.o[q.a];app.querySelectorAll('[data-pick]').forEach(b=>{const k=+b.dataset.pick;b.disabled=true;if(L.view.opts[k].i===q.a)b.classList.add('right');else if(k===L.answer)b.classList.add('wrong');});}
+  else if(q.t==='vf'){ok=(L.answer===1)===q.a;shown=q.a?'Vrai':'Faux';app.querySelectorAll('[data-pick]').forEach(b=>{const k=+b.dataset.pick;b.disabled=true;if((k===1)===q.a)b.classList.add('right');else if(k===L.answer)b.classList.add('wrong');});}
+  else if(q.t==='trou'){ok=L.view.opts[L.answer].i===q.a;shown=q.o[q.a];app.querySelectorAll('[data-pick]').forEach(b=>{const k=+b.dataset.pick;b.disabled=true;if(L.view.opts[k].i===q.a)b.classList.add('right');else if(k===L.answer)b.classList.add('wrong');});const g=document.getElementById('gap');if(g){g.textContent=q.o[q.a];g.style.color=ok?'var(--ok-ink)':'var(--bad-ink)';}}
+  else if(q.t==='assoc'){ok=L.answer===0;shown=L.answer===1?'une erreur d\'association':L.answer+' erreurs d\'association';}
+  else if(q.t==='ordre'){ok=L.answer.every((v,k)=>v===k);shown=q.items.join(' → ');app.querySelectorAll('[data-s]').forEach((b,k)=>{b.disabled=true;b.classList.add(L.answer[k]===k?'right':'wrong');});app.querySelectorAll('[data-b]').forEach(b=>b.disabled=true);}
+  L.checked=true;L.seen.add(L.cur.i);
+  if(ok){buzz(20);if(!L.cur.retry)L.firstTry++;}
+  else{buzz([40,60,40]);if(!L.cur.retry){L.wrongOnce.add(L.cur.i);L.wrongList.push(q);L.queue.push({q,i:L.cur.i,retry:true});}}
+  const fb=document.getElementById('fb');fb.classList.add(ok?'good':'badf');
+  const title=ok?['Exact !','Bien joué !','Parfait !','Oui !'][Math.floor(Math.random()*4)]:'Pas tout à fait';
+  const body=ok?(q.e?esc(q.e):''):`${q.t==='assoc'?'':'<span class="ans">Réponse : '+esc(shown)+'</span><br>'}${q.e?esc(q.e):''}`;
+  fb.querySelector('.fb-in').innerHTML=`<div class="msg"><div class="ic" style="color:${ok?'var(--ok)':'var(--bad)'}">${ok?ICON.check:ICON.x}</div><div><b>${title}</b><span>${body}</span></div></div><button class="btn wide ${ok?'ok':'bad'}" id="check">Continuer</button>`;
+  const btn=document.getElementById('check');btn.addEventListener('click',nextQ);btn.focus({preventScroll:true});
+  document.querySelector('.lbar .pb i').style.width=Math.round((L.total-L.queue.length)/L.total*100)+'%';
+  document.querySelector('.lbar .cnt').textContent=(L.total-L.queue.length)+'/'+L.total;
+}
+function quitPrompt(){
+  const m=document.createElement('div');m.className='modal';m.innerHTML=`<div class="box"><h3>Quitter la leçon ?</h3><p>La progression de cette leçon ne sera pas enregistrée.</p><button class="btn wide" id="stay">Continuer la leçon</button><button class="btn ghost wide" id="leave">Quitter</button></div>`;
+  document.body.appendChild(m);m.querySelector('#stay').addEventListener('click',()=>m.remove());m.querySelector('#leave').addEventListener('click',()=>{m.remove();L=null;home();});
+}
+function finish(){
+  const acc=Math.round(L.firstTry/L.total*100);const perfect=L.wrongOnce.size===0;
+  const xp=L.firstTry*10+(perfect?20:0)+(L.isReview?5:0);
+  S.xp+=xp;touchStreak();
+  if(!L.isReview){const prev=S.lessons[L.l.id]||{done:false,best:0};S.lessons[L.l.id]={done:true,best:Math.max(prev.best||0,acc)};}
+  save();
+  const color=L.u?`var(${L.u.c})`:'var(--brand)';
+  const title=perfect?'Sans faute !':acc>=75?'Leçon terminée !':'Terminé, on y retourne bientôt';
+  const sub=perfect?'Tu as répondu juste du premier coup à toutes les questions.':`${L.firstTry} bonne${L.firstTry>1?'s':''} réponse${L.firstTry>1?'s':''} du premier coup sur ${L.total}. Les questions manquées te sont revenues en fin de leçon.`;
+  let h=`<div class="screen"><div class="result" style="--c:${color}"><div class="medal" style="border-color:${perfect?'var(--gold)':color};background:${perfect?'var(--gold-soft)':'var(--surface-2)'};color:${perfect?'var(--gold)':color}">${perfect?ICON.star:ICON.trophy}</div><h1>${title}</h1><p>${sub}</p>
+  <div class="tiles"><div class="tile" style="--c:var(--gold-dark)"><div class="l">XP gagnés</div><div class="v">+${xp}</div></div><div class="tile" style="--c:${color}"><div class="l">Précision</div><div class="v">${acc} %</div></div><div class="tile" style="--c:#E0632B"><div class="l">Série</div><div class="v">${S.streak} j</div></div></div>`;
+  if(L.wrongList.length){h+=`<div class="review-list"><b>À revoir dans les fiches :</b><ul>${L.wrongList.slice(0,5).map(q=>`<li>${esc(q.q.replace('___','…'))}</li>`).join('')}</ul></div>`;}
+  h+=`<div class="acts">${!perfect?`<button class="btn" id="again">Refaire la leçon</button>`:''}<button class="btn ${perfect?'':'ghost'}" id="back">Continuer</button><a class="btn ghost" href="${FICHES_URL}">Ouvrir les fiches</a></div></div></div>`;
+  app.innerHTML=h;window.scrollTo(0,0);
+  const again=document.getElementById('again');if(again)again.addEventListener('click',()=>{const u=L.u,l=L.l,r=L.isReview;const qs=r?shuffle(allLessons().flatMap(x=>x.l.q.map(q=>Object.assign({},q,{_u:x.u})))).slice(0,12):l.q;startLesson(u,l,qs,r);});
+  document.getElementById('back').addEventListener('click',()=>{L=null;home();});
+}
+home();
+</script>
+
+</body>
+</html>
